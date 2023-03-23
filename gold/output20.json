@@ -1,0 +1,56 @@
+[
+  [
+    "Sayori1",
+    "Hits one enemy and the enemy behind it with an Attack of 68.4% damage",
+    "Hits one enemy and the enemy behind it with an Attack of 91.8% damage, applies Drenched (7s)(Stacking) to the target and oneself",
+    "Hits all enemies in range with an Attack of 109.8% damage, applies Drenched (15s)(Stacking) to them.",
+    "When battle starts, applies Attack 94%UP (Perpetual) to oneself",
+    "When Drenched is applied to oneself, applies Attack 144%UP (1x)(Stacking) and Attack Speed Up (1x) to oneself, and applies Zeal increase speed 5%UP (1s)(Stacking) to the front ally",
+    "Hits one enemy in range with damage."
+    ],
+    [
+    "Kuryuu1",
+    "Recovers all allies in range for 15% of their maximum HP, removes Zeal increase speed down, freeze, and poison and applies Poison resistance (15s) and Barrier (Durability 19,696)(Perpetual)(Stacking)",
+    "Recovers all allies in range for 15% of their maximum HP, removes Attack down and applies Attack down resistance (15s), and applies Attack up seal (8s) to all enemies",
+    "Hits all enemies in range with healing damage of 560%, removes Zeal Gain Up and Attack Speed Up, applies Attack Speed Up seal (30s) and Zeal Gain Up seal (30s)",
+    "When healed or when Curse is applied to oneself, applies Attack Speed Up(1x), Attack 96%UP (1x)(Stacking), and Healing 96%UP (1x)(Stacking) to front and same column allies, and removes curse from all allies",
+    "When healed, applies Attack 96%UP (3s)(Stacking) and Recovery 10%(1x)(Stacking) to the target, and applies Healing 96%UP (8s)(Stacking) to oneself",
+    "Heals one ally in range"
+    ],
+    [
+      "Magnesigne1",
+      "Inflicts Electrify (8s)(Stacking) on oneself and surrounding allies, summons Magnesigne [Hologram] (Lv10) on squares without allies.",
+      "Inflicts 228% attack damage on all enemies in range and stuns (5s) them, reduces damage cut by 30%.",
+      "Inflicts 444% attack damage on all enemies in range, inflicts Electrify (30s)(Stacking) on all allies.",
+      "At the start of battle, grants oneself Attack 128%UP (Perpetual) and resistance to Poison (Perpetual), Burn (Perpetual) and Curse (Perpetual).",
+      "When Electrify is inflicted on oneself, grants oneself and surrounding allies Attack 128%UP (15s)(Stacking) and Attack Speed Up (1x).",
+      "Deals damage to one enemy in range."
+      ],
+      [
+      "Luuna1",
+      "Grants HP-based Damage Limit 1,691 (9s) to all allies in range, grants oneself Attack 99%UP (Perpetual)(Stacking).",
+      "Grants Attack 99%UP (20s)(Stacking) and Healing 99%UP (20s)(Stacking) to all allies in range, recovers 36% of max HP.",
+      "Removes Attack Speed Up Seal from all allies in range, grants Attack 69%UP (Perpetual)(Stacking) and Resurrection (1x)(Stacking) at 69% max HP upon death, removes Resurrection from all enemies, grants Attack 69%DOWN (24s)(Stacking) and Attack Speed Up Seal (24s) to all enemies.",
+      "At the start of battle, grants Health 99%(Perpetual) and Resurrection (1x) at 6% max HP upon death to all allies.",
+      "When receiving healing, grants Attack 66%UP (1x)(Stacking) and Healing 66%UP (1x)(Stacking) to the target, grants Attack Speed Up (1x) to front ally in one's own row, and grants oneself Attack Speed Delay 1 second (9s)(Stacking) and Attack Speed Up Seal (9s).",
+      "Deals damage to one enemy in range and all other enemies."
+      ],
+      [
+        "Rinne1",
+        "Inflict Attack damage of 232.3% on all enemies in range, and add HP-based Damage Limit 8,888 Increase (8s)(Stacking)",
+        "Inflict Attack damage of 232.3% on all enemies in range, and add PoisonAccumulation and BurnHeat to oneself and all allies of non-attribute and add PoisonAccumulation and BurnHeat to oneself and all allies of non-attribute",
+        "Inflict Attack damage of 888.8% and 8% of Max HP damage on all enemies in range, and 8% of Max HP damage on oneself and all allies of non-attribute",
+        "At the start of battle, add Poison(88s) and HP-based Damage Limit 8,888 Increase (Perpetual) to all enemies and add Attack 88%UP(Perpetual) to oneself",
+        "Inflict Curse (8s) on the target of attack and add Attack 365%UP(1x)(Stacking) and Barrier (Durability 88) (Perpetual) (Stacking) to oneself.",
+        "Inflict damage on one enemy in range."
+        ],        
+        [
+          "Juuni1",
+          "Grants all allies within range Attack 12% UP (12s)(Stacking) and Attack Speed Up(1x) for each gauge of zeal,",
+          "Deals damage of 244% of attack to all enemies in range and reduces Damage Cut by 24%,",
+          "Deals damage of 360.4% of attack to all enemies in range and grants oneself resurrection at 48% of maximum HP upon death (1x)(Stacking)",
+          "Grants oneself Attack 120% UP (2x)(Stacking) and Evade (1x) when attacking or when taking attack damage, and restores 1% of maximum HP to adjacent allies",
+          "At the start of battle, or upon oneself's resurrection, grants all allies Attack 72% UP (Perpetual)(Stacking)",
+          "Deals damage to one enemy within range."
+          ]
+]

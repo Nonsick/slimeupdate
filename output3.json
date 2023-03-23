@@ -1,0 +1,56 @@
+[
+  [
+    "Shirayuki2",
+    "Hit one enemy and its adjacent enemies within range for 223.6% attack damage, remove Poison resistance, decrease Damage Cut by 45%, and apply PoisonAccumulation",
+    "Hit all enemies within range for 223.6% attack damage, apply PoisonAccumulation and Poison removal Seal(15s), remove all allies' Attack downs, grant allies Attack down resistance (15s), stun resistance (15s), and HP-based Damage Limit 1,123(11s)",
+    "Hit all enemies within range for 311.5% attack damage, apply PoisonAccumulation and HP-based Damage Limit 111,111 increase (23s)(Stacking)",
+    "Hit targets with HP-based Damage Limit 1,700 increase (8s)(Stacking) and grant self 72% Attack increase (8s)(Stacking) and Evade(1x)",
+    "When attacking or if self is stunned, remove all allies' stun and HP-based Damage Limit Increase and recover HP by 5,100",
+    "Damage one enemy within range."
+    ],
+    [
+      "Dii1",
+      "Deals 106.5% attack damage to all enemies and removes Evade and Damage Immune effects from both enemies and allies",
+      "Deals 106.5% attack damage to all enemies and removes Hostility from both enemies and allies, grants Hostility resistance (10s)",
+      "Deals 137.9% attack damage to all enemies and reduces Damage Cut by 15%",
+      "At the start of battle, deals 20% current HP damage to adjacent allies, grants Evade (3x) and grants self Attack 320% UP (Perpetual)",
+      "Applies Poison (15s) to the target and Poison (3s) to adjacent allies when attacking",
+      "Deals damage to one enemy in range"
+      ],
+      [
+        "Kuon1",
+        "Deal 220.2% attack damage to one enemy",
+        "Deal 220.2% attack damage to all enemies and grant self 20% attack UP (Perpetual)(Stacking)",
+        "Deal 448.9% attack damage to one enemy",
+        "\n Heal 800 HP to self and adjacent allies when attacking.\n <Pact 15>\n Heal 8,900 HP to self and adjacent allies, remove Curse and grant self Barrier (Durability 500) (Perpetual)(Stacking) and 50% attack UP (Perpetual)(Non-Stacking)",
+        "\n Grant self 130% Zeal increase speed UP (6s) at the start of battle.\n <Pact 15>\n Grant self 130% Zeal increase speed UP (6s) at the start of battle, grant all allies 50% attack UP (Perpetual) and 100% Healing UP (Perpetual)",
+        "Deal damage to one enemy within range"
+        ],
+        [
+          "Kuon2",
+          "Heals all allies within range by 5% of their maximum HP and grants the user 12% increase in attack (permanent, stacking).",
+          "Heals all allies within range by 10% of their maximum HP and grants the user 23% increase in attack (permanent, stacking).",
+          "Heals all allies within range by 80% of their maximum HP, removes Poison and grants Poison resistance (20s) to all allies.",
+          "On attack, grants the user 15% damage cut (1x, stacking) and heal the user and adjacent allies by 2% of their maximum HP. <Pact 15> Grants the user 15% damage cut (1x, stacking) grants the user and adjacent allies 140% increase in attack (3s, stacking) and barrier with 890 durability (permanent, stacking) and heal the user and adjacent allies by 5% of their maximum HP.",
+          "When the user is on the front line, grants the user 39% increase in zeal gain rate (20s) and grants all allies 20% increase in attack and healing (permanent) <Pact 15> At the start of combat, adds 1 zeal to the user, grants all allies 90% increase in attack and healing (permanent) and when the user is on the front line, grants the user 89% increase in zeal gain rate (20s) and grants all allies 90% increase in attack and healing (permanent).",
+          "Deals damage to a single enemy within range."
+          ],
+          [
+            "Kuon2",
+            "Heals all allies within range by 5% of their maximum HP and grants the user 12% increase in attack (permanent, stacking).",
+            "Heals all allies within range by 10% of their maximum HP and grants the user 23% increase in attack (permanent, stacking).",
+            "Heals all allies within range by 80% of their maximum HP, removes Poison and grants Poison resistance (20s) to all allies.",
+            "On attack, grants the user 15% damage cut (1x, stacking) and heal the user and adjacent allies by 2% of their maximum HP. <Pact 15> Grants the user 15% damage cut (1x, stacking) grants the user and adjacent allies 140% increase in attack (3s, stacking) and barrier with 890 durability (permanent, stacking) and heal the user and adjacent allies by 5% of their maximum HP.",
+            "When the user is on the front line, grants the user 39% increase in zeal gain rate (20s) and grants all allies 20% increase in attack and healing (permanent) <Pact 15> At the start of combat, adds 1 zeal to the user, grants all allies 90% increase in attack and healing (permanent) and when the user is on the front line, grants the user 89% increase in zeal gain rate (20s) and grants all allies 90% increase in attack and healing (permanent).",
+            "Deals damage to a single enemy within range."
+            ],
+            [
+              "Uruuru & Saraana1",
+              "Deal 64.2% Attack damage to all enemies in range.",
+              "Deal 90.9% Attack damage to all enemies in range.",
+              "Deal 140% Attack damage to all enemies in range, remove Evade and Damage Immune from enemies.",
+              "\n Apply Attack450%UP(1x)(Stacking) to self upon attack.\n ＜Pact 15＞\n Apply Attack690%UP(1x)(Stacking) to self upon attack.",
+              "\n Apply Curse(12s) to target upon attack.\n ＜Pact 15＞\n Apply Curse(12s) to target upon attack and apply Damage Cut8% down, Evade seal (1s) and Damage Immune seal (1s) to target.",
+              "Deal damage to one enemy in range."
+              ]
+]

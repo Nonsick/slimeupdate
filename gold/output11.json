@@ -1,0 +1,55 @@
+[
+  [
+    "Atuy1",
+    "Deals 195.5% attack damage to one enemy within range, and applies Hostility (Perpetual) to self and target",
+    "Deals 255.8% attack damage to one enemy within range, and move to an adjacent empty space after Chain Attack ends",
+    "Deals 277.7% attack damage to all enemies within range, and applies stun (10s) to all targets",
+    "At the start of battle, grants self 180% attack boost (Perpetual) and 25% damage cut (Perpetual)",
+    "When attacking or taking attack damage, grants self 50% attack boost (1x) (Stacking) and recovers 500 HP",
+    "Deals damage to one enemy within range"
+    ],
+    [
+      "Atuy2",
+      "Attack one enemy within range for 256.4% damage, apply Hostility(Perpetual), remove own Curse, apply Curse resistance (15s) and Leech 30% (1s)(Stacking) and Hostility(15s)",
+      "Attack all enemies within range for 207.1% damage, lower damage cut by 50%, apply Drenched resistance (15s) to self",
+      "Attack all enemies within range for 314.9% damage, apply Attack 100% UP (Perpetual)(Stacking) and Leech 50% (30s)(Stacking) and Health 120% (30s)(Stacking) and Electrify (90s)(Stacking) to self",
+      "At the start of battle, apply Attack UP seal resistance (Perpetual) to self. When attacking, apply Attack 285% UP (1x)(Stacking) and Electrify (3s)(Stacking) and Damage Cut 30% (3s)(Non-Stacking) to self",
+      "When receiving attack damage or healing, apply Attack 50% UP (3s)(Stacking) and Damage Cut 35% (3s)(Non-Stacking) and Attack Speed Up (1x) to self",
+      "Attack one enemy within range"
+      ],
+      [
+        "Munechika1",
+        "Deals 101.3% attack damage to one enemy and the one behind it, decreases Damage Cut by 50% and removes hostility of all allies and enemies",
+        "Deals 109.4% attack damage to one enemy and the one behind it, grants self Hostility (30s)",
+        "Deals 240% attack damage to one enemy and the one behind it, applies Damage Cut Seal (30s) to the enemy",
+        "When receiving attack damage, grants self Damage Immune (1x), Damage Cut 35% (1x) (Stacking) and Attack 110% UP (7s) (Stacking)",
+        "When self is granted Hostility or hostility status is removed from self, grants Barrier (Durability 10,000) (Perpetual) (Stacking) to self and both adjacent allies",
+        "Deals damage to one enemy within range"
+        ],[
+          "Munechika2",
+          "Grants self Health30%(Perpetual)(Stacking) and Attack150%UP(Perpetual)(Stacking) and removes Zeal increase speed reduction from all allies",
+          "Deal 221.8% attack damage to one enemy in range, apply Stun(5s) and decrease Damage Cut by 50%",
+          "Deal 291.6% attack damage to all enemies in range, apply Stun(10s)",
+          "When attacking or taking attack damage, grants Evade(1x) Damage Cut40%(1x)(Stacking) and Attack70%UP(1x)(Stacking) to self and surrounding allies",
+          "When Burn is applied to self or when self's Evade state is removed, removes Burn from self and surrounding allies, grants Burn resistance (2s) Health40%(10s)(Stacking) and recovers 6% of maximum HP",
+          "Deal damage to one enemy in range"
+          ],
+          [
+            "Munechika3",
+            "Deals attack damage of 184.4% to all enemies and grants self Reflecting Barrier (durability 1,200,000) (5s)(Stacking), Hostility(15s) and Cover(15s)(Stacking)",
+            "Deals attack damage of 184.4% to all enemies, reduces Damage Cut by 40% and removes Zeal increase speed and attack decrease debuffs for all allies and grants Zeal increase speed debuff resistance (15s) and attack decrease debuff resistance (15s)",
+            "Deals attack damage of 359.8% to all enemies, applies attack debuff seal(25s) and removes allies' zeal gain up debuff seal and grants Attack100%UP(Perpetual)(Stacking)",
+            "At the start of combat, grants self Attack285%UP(Perpetual), Burn resistance (Perpetual), Recovery20%(Perpetual), multiplies max HP by 70% and increases zeal by 2.",
+            "When taking attack damage or attacking a Burn state enemy, removes own curse and grants self Attack91%UP(4x)(Stacking) and Damage Cut30%(1x)(Stacking) and recovers 4% of max HP.",
+            "Deals damage to one enemy within range."
+            ],
+            [
+              "Fumirul1",
+              "Remove Hostility from all enemies, grant them Stun (3s) and reduces Damage Cut by 48%",
+              "Grant all allies Attack Speed Up (1x) and Barrier (Durability 19,000) (Perpetual) (Stacking)",
+              "Summon Shumari (Lv10) to empty spaces.",
+              "At the start of battle, grant self Hostility resistance (Perpetual) and all allies Attack 75% UP (Perpetual).<Pact 15> At the start of battle, grant self Hostility resistance (Perpetual), increase Zeal by 1 and all allies Attack 145% UP (Perpetual) and Health 60% (Perpetual).",
+              "When receiving healing, grants opponent's maximum HP 6% healing, grants Attack 60% UP (1x) (Stacking) and Healing 60% UP (1x) (Stacking).<Pact 15> When receiving healing, grants opponent's maximum HP 6% healing, grants Attack 130% UP (1x) (Stacking), Healing 130% UP (1x) (Stacking) and Attack Speed Up (1x).",
+              "Deal damage to one enemy within range."
+              ]
+]

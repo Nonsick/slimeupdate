@@ -1,0 +1,56 @@
+[
+  [
+    "Uruuru & Saraana2",
+    "Inflict Attack 108% damage to all enemies and apply Drenched(10s)(Stacking) and BurnAccumulation to all enemies",
+    "Inflict Attack 154.6% damage to one enemy,apply Hostility(5s) to yourself and move to an empty square after Chain Attack ends",
+    "Inflict Attack 200.1% damage to all enemies and decrease the speed of zeal gain by 50% (30s) (Stacking) to all enemies.",
+    "When battle starts, apply Hostility(5s) and Attack 315% UP (Perpetual) to yourself",
+    "When yourself is inflicted with Hostility or when yourself's Hostility is removed, apply Barrier(endurance 15,000)(Perpetual)(Stacking) to yourself and Curse(15s) to all enemies.",
+    "Inflict damage to one enemy in the range"
+  ],
+  [
+    "Uruuru & Saraana3",
+    "Remove Zeal slowdown and Poison from all allies and grant Poison resistance (15s), and grant 140% attack up (30s) (Stacking) to all allies that are fire and neutral element type.",
+    "Deal 255.6% attack damage to all enemies and remove Damage Immune and Evade and decrease Damage Cut by 40% and inflict BurnAccumulation to all enemies",
+    "Deal 360.2% attack damage to all enemies and inflict Curse(30s) and AttackUP Seal(30s) and Evade Seal(30s) to all enemies",
+    "Remove Attack Speed Up from the attacked target and grant 160% attack up (1x)(Stacking) to oneself",
+    "When activating 1st Chain Attack with Zeal gauge 4 or more, grant oneself Attack69%UP(7s)(Stacking) for each gauge of Zeal and inflict Curse removal seal(7s) to all enemies. When activating 1st Chain Attack with Zeal gauge less than 7, increase oneself's Zeal by 1.",
+    "Deal damage to one enemy and enemies in the same column as it."
+  ],
+  [
+    "Karulau1",
+    "Deal 104.8% of Attack damage to a single target within range",
+    "Deal 134.8% of Attack damage to a single target within range",
+    "Deal 209.6% of Attack damage to a single target within range",
+    "\n Remove own damage cut effect and grant Attack 450%UP (1x) (Stacking) upon attack \n <Pact 15>\n Remove own damage cut effect and grant Attack 510%UP (1x) (Stacking) and Damage Immune (2x) upon attack",
+    "\n When own HP falls below 50%, grant self Attack 75%UP (Perpetual) (Non-Stacking) and Zeal increase speed 20%UP (Perpetual) (Non-Stacking)\n <Pact 15>\n When own HP falls below 50%, grant self Attack 205%UP (Perpetual) (Non-Stacking) and Zeal increase speed 20%UP (Perpetual) (Non-Stacking)",
+    "Deal damage to a single target within range"
+  ],
+  [
+    "Karulau2",
+    "Apply Healing100%UP (Perpetual)(Stacking) to self, increase Zeal by 1, remove Curse and AttackUP seal from all allies, and remove Evade and Damage Immune from all enemies",
+    "Apply Attack100%UP (20s)(Stacking), Damage Immune(3x) and Attack Speed Up(2x) to all allies in range, and apply Healing100%UP (Perpetual)(Stacking) to self",
+    "Deal 339% of Healing damage to one enemy and its rear enemy in range, inflict BurnAccumulation, remove own HealingUP and deal 50% of current HP as damage to self",
+    "When healing, apply Healing140%UP (20x)(Stacking) to self, apply Attack140%UP (1x)(Stacking) and Attack Speed Up(1x) to front and back allies",
+    "When HP is less than 50%, apply Zeal rising speed 20%UP (Perpetual)(Non-Stacking) to self and Attack160%UP (Perpetual)(Non-Stacking) and Healing160%UP (Perpetual)(Non-Stacking) to all allies",
+    "Heal self"
+  ],
+  [
+    "Ulthury1",
+    "Deals 166.3% attack damage to one enemy within range.",
+    "Deals 175.5% attack damage to all enemies within range.",
+    "Deals 227% attack damage to all enemies within range and remove damage cut effect.",
+    "\n When attacking, gives a 26% damage cut (2x) (stacking) to adjacent allies.\n ＜Pact 15＞\n When attacking, gives a 190% attack increase (1x) (stacking) to oneself, and gives a 26% damage cut (2x) (stacking) and 500 barrier (perpetual)(stacking) to adjacent allies.",
+    "\n At the start of battle, grants a 25% damage cut (perpetual) to all allies.\n ＜Pact 15＞\n At the start of battle, grants a 25% damage cut (perpetual), an 18,000 barrier (perpetual) and multiplies all allies max HP by 1.5x to all allies.",
+    "Deals damage to one enemy within range."
+  ],
+  [
+    "Benawi1",
+    "Inflict 208.1% attack damage to one enemy in range, grant self Damage Cut 30% (Perpetual) (Non-Stacking), clear Hostility of all enemies and allies",
+    "Inflict 251.4% attack damage to all enemies in range, grant self Hostility (30s)",
+    "Inflict 376.6% attack damage to all enemies in range",
+    "\n When self Damage Immune status is cleared, grant self Attack180%UP (1x) (Stacking)\n ＜Pact 15＞\n When self Damage Immune status is cleared, grant self Attack180%UP (1x) (Stacking) and grant nearby allies Attack70%UP (1x) (Stacking)",
+    "\n When attacking, grant self Damage Immune (1x) and Damage Cut 15% (1x) (Non-Stacking)\n ＜Pact 15＞\n When attacking, grant self Damage Immune (1x), Damage Cut 30% (1x) (Non-Stacking), and Attack 115%UP (1x) (Stacking)",
+    "Inflict damage to one enemy in range"
+  ]
+]

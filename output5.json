@@ -1,0 +1,56 @@
+[
+  [
+    "Ukon1",
+    "Deal 161.4% attack damage to a single enemy within range",
+    "Deal 195.1% attack damage to all enemies within range",
+    "Deal 310% attack damage to a single enemy within range",
+    "\n At the start of battle, grant self Attack30%UP(Perpetual) and Resurrection(1x) upon death with 1 HP\n ＜Pact 15＞\n At the start of battle, grant self Attack350%UP(Perpetual), Resurrection(1x) and Attack160%ダウン(Perpetual) upon death with 1 HP and increase zeal by 1",
+    "\n When attacking, restore 800 HP to self and adjacent allies\n ＜Pact 15＞\n When attacking, restore 9800 HP to self and adjacent allies and grant self Recovery5%(1x)(Stacking) per zeal gauge",
+    "Deal damage to a single enemy within range"
+    ],
+    [
+      "Rulutieh1",
+      "grant oneself Attack240%UP(10s)(Stacking)",
+      "grant all allies within range, Damage Cut50%(20s)(Stacking) and Attack95%UP(20s)(Stacking)",
+      "Restore all allies within range 6,500 and remove Curse, grant Curse resistance (20s)",
+      "\n when battle starts, grant all enemies Attack40% reduction (Perpetual)\n ＜Pact 15＞\n when battle starts, grant all allies in the back row Attack100%UP (Perpetual), grant all enemies Attack40% reduction(Perpetual) and Zeal gauge increase speed reduction 40% (10s)",
+      "\n when receiving attack damage, restore oneself 800\n ＜Pact 15＞\n when receiving attack damage, restore oneself 7800 and restore allies in the back row by 3% max HP",
+      "deals damage to a target within range"
+      ],
+      [
+        "Nosuri1",
+        "Damage a single enemy within range with Attack at 134.5%",
+        "Recover 50% of your maximum HP and apply Attack 140%UP (10s)(Stacking)",
+        "Damage a single enemy within range with Attack at 338.7%",
+        "\n At the start of battle, apply Attack 45%UP (Perpetual) to self.\n ＜Pact 15＞\n At the start of battle, apply Attack 333%UP (Perpetual) to self.",
+        "\n When your position is in the front line, apply Attack 75%UP (Perpetual) and Zeal increase speed 40%UP (20s) to self.\n ＜Pact 15＞\n When your position is in the front line, apply Attack 75%UP (Perpetual) and Zeal increase speed 40%UP (20s) and Attack Speed Up(180s) to self, and reduce Chain Attack cooldown by 91%",
+        "Damage a single enemy within range with Attack"
+        ],
+        [
+          "Nosuri2",
+          "Deal 151.5% attack damage to one enemy, inflicting Hostility (51s) and decreasing their Damage Cut by 51%, and inflict Hostility (5s) to yourself.",
+          "Deal 151.5% attack damage to one enemy, remove their Evade and Damage Immune status, and heal yourself for 51% of your maximum HP.",
+          "Deal 515.1% attack damage to one enemy and increase the Zeal increase speed of yourself and the allies behind you by 51% for 7s (stacking)",
+          "When battle starts, grant yourself with 456% attack increase and 40% Zeal increase speed to yourself (20s)",
+          "When you receive Hostility or lose it, grant yourself with 140% attack increase, evade and leech 33% of the attack dealt (3x) (Stacking)",
+          "Damage one enemy and the enemy behind it."
+          ],
+          [
+            "Ougi1",
+            "Deal 171% Attack damage to one enemy within range and apply Stun (5s)",
+            "Deal 206.8% Attack damage to one enemy within range",
+            "Deal 328.4% Attack damage to all enemies within range and apply Stun (10s)",
+            "\n Apply Poison (12s) to attacked target \n ＜Pact 15＞\n Apply Poison (12s) and Poison Accumulation and Increase HP-based Damage Limit by 5500 (3s)(Stacking) to attacked target",
+            "\n On attack, apply Damage Immune (1x) and Damage Cut 15%(1x)(Non-Stacking) to self.\n ＜Pact 15＞\n On attack, apply Attack 550% UP (3s)(Stacking) ,Damage Immune (1x) and Damage Cut 15% (1x)(Non-Stacking) to self.",
+            "Deal damage to one enemy within range"
+            ],
+            [
+              "Ougi2",
+              "Deals Attack 150.9% damage to all enemies",
+              "Deals Attack 150.9% damage to all enemies and move ally behind the target to an empty slot after Chain Attack",
+              "Deals Attack 298.6% damage to all enemies and inflict stun(8s)",
+              "On attack, grants Attack 60%UP (2x)(Stacking) to self and adjacent ally",
+              "On attack to Poison inflicted enemies or Burn inflicted enemies, grants Attack 100%UP (1x)(Stacking) to self",
+              "Deals damage to one enemy in range"
+              ]
+]

@@ -1,0 +1,56 @@
+[
+  [
+    "Touka1",
+    "Deals 139% Attack damage to one enemy and removes Damage Immune effect",
+    "Deals 262.7% Attack damage to one enemy and applies Damage Cut 60% (3x) to self",
+    "Deals 326% Attack damage to one enemy and removes Damage Cut effect",
+    "When attacking, applies Evade (1x) and Attack 60% UP (1x) (Stacking) to self. < Pact 15 > When attacking, applies Evade (1x) and Attack 255% UP (1x) (Stacking) to self",
+    "When self's Evade state is removed, applies Damage Cut 15% (3s) (Stacking) and Attack 110% UP (3s) (Stacking) to self. < Pact 15 > When self's Evade state is removed, applies Damage Cut 15% (3s) (Stacking), Attack 110% UP (10s) (Stacking), and Attack Speed Up (10s) to self",
+    "Deals damage to one enemy in range"
+    ],
+    [
+      "Touka2",
+      "Deals 139% Attack damage to one enemy and applies Curse (15s) to the target and the user, and grants the user Resurrection (1x) (Stacking) at 29% of max HP upon death.",
+      "Deals 144.8% Attack damage to one enemy, removes Damage Cut and applies Damage Cut Seal (10s) to the target and the user.",
+      "Deals 340% Attack damage to all enemies, applies Attack UP Seal (30s) and reduces Zeal increase speed by 50% (30s) (Stacking), grants the user Attack Speed Up (15s) and reduces Chain Attack's cooldown by 9 seconds, and causes 99% damage based on current HP. ",
+      "When attacking or when Curse is applied to the user, grants the user Attack 170% UP (2x) (Stacking) and Damage Cut 30% (1x) (Stacking).",
+      "When the battle starts or when the user's Resurrection is triggered, removes the user's Curse and Damage Cut Seal and grants Attack 150% UP (Perpetual) (Stacking) and increases Zeal by 1.",
+      "Deals damage to one enemy in range."
+      ],
+      [
+        "Camyu1",
+        "Deals 99.9% Attack damage to one enemy in range (priority to rear column)",
+        "Deals 99.9% Attack damage to all enemies in range",
+        "Deals 127.3% Attack damage to all enemies in range and applies Attack UP Seal(30s) to them.",
+        "At the start of battle, grants self an Attack 455% UP (Perpetual) effect. < Pact 15 > At the start of battle, grants self an Attack 800% UP (Perpetual) effect and increases Zeal by 1.",
+        "At the start of battle, grants all allies an Attack 32% UP (Perpetual) effect. < Pact 15 > At the start of battle, grants all allies an Attack 100% UP (Perpetual) effect.",
+        "Deals damage to one enemy in range."
+        ],
+        [
+          "Camyu2",
+          "All enemies in range: deal 241.2% attack damage, and remove Attack Speed Up, Attack Up seals and zeal speed down from all allies and add zeal speed down resistance (10s) ",
+          "All enemies in range: deal 241.2% attack damage and add 45% zeal speed down (10s)(Stacking), Attack Speed Up seal (10s) and Attack Up seal (10s) ",
+          "All enemies in range: deal 555.4% attack damage and add stun (10s), stun resistance seal (30s), and zeal gain up seal (30s)",
+          "At the start of combat or when 3rd chain attack is used: all allies get 108% attack up (63s)(Stacking), 108% healing up (63s)(Stacking) and attack speed up(15s) and 8% zeal speed up per ally (6s)(Stacking)",
+          "When attacking or gaining attack speed up, get 108% attack up (3x)(Stacking) and reduce chain attack cool down by 3%",
+          "Deal damage to one enemy in range"
+          ],
+          [
+            "Anju1",
+            "Attack a single enemy within range for 107.1% damage.",
+            "Attack all enemies within range for 107.1% damage, grant self Resurrection(1x)(Non-Stacking) upon death with 1 HP remaining.",
+            "Attack all enemies within range for 151.7% damage, deal damage to self equal to 51% of current HP.",
+            "When attacking, grant self Attack380%UP(1x)(Stacking) and Zeal1gauge grants Attack20%UP(1x)(Stacking). < Pact 15 > When attacking, remove all Poison status from self and grant Attack380%UP(1x)(Stacking), Zeal1gauge grants Attack45%UP(1x)(Stacking) and Poison resistance(8s).",
+            "When own HP drops below 50%, grant self Attack75%UP(Perpetual)(Non-Stacking) and Zeal increase speed 20%UP(Perpetual)(Non-Stacking). < Pact 15 > When own HP drops below 50%, grant self Attack125%UP(Perpetual)(Non-Stacking), Zeal increase speed 20%UP(Perpetual)(Non-Stacking), Attack Speed Up(20s), Leech20%(Perpetual)(Non-Stacking).",
+            "Attack a single enemy within range"
+            ],
+            [
+              "Anju2",
+              "All allies within range receive Attack100%UP(20s)(Stacking) and Attack Speed Up(3x)",
+              "All allies within range receive Leech35%(15s)(Stacking) and the user gain a 14% of maximum HP on death Resurrection(1x)(Stacking)",
+              "All enemies within range receive an Attack of 310.7%, are inflicted with Poison[Accumulation][30s] and all allies are inflicted with Poison(10s)",
+              "On attack, the user receives Attack214%UP(1x)(Stacking) and Zeal1 gauge for each additional Attack20%UP(1x)(Stacking)",
+              "At the start of combat or when the user's resurrection takes place, the user receives Attack60%UP(Perpetual)(Stacking) and Zeal is increased by 2",
+              "Damage to a single enemy within range"
+              ]
+]

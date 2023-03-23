@@ -1,0 +1,55 @@
+[
+  [
+    "Itak1",
+    "Inflict 148.6% attack damage on one enemy within range.",
+    "Inflict 195% attack damage on all enemies within range.",
+    "Inflict 340.5% attack damage on all enemies within range.",
+    "\n At the start of battle, grant self a 45% attack boost (perpetual)\n <Pact 15>\n At the start of battle, grant self a 165% attack boost (perpetual) and a 120% attack boost (perpetual) to all water-attributed allies.",
+    "\n At the start of battle, grant a 30% attack boost (perpetual) to self and adjacent allies\n <Pact 15>\n At the start of battle, grant a 120% attack boost (perpetual) to self and adjacent allies, and for every ally, grant a 10% boost to zeal acceleration rate (6s) and immunity to zeal acceleration rate decrease to all water-attributed allies.",
+    "Inflict damage on one enemy within range."
+  ],
+  [
+    "Teoro1",
+    "Deals 84.8% attack damage to a single enemy within range",
+    "Deals 109.2% attack damage to a single enemy within range",
+    "Deals 157% attack damage to all enemies within range",
+    "Upon start of battle, grants self 375% attack UP (perpetual) <Pact 15> grants self 750% attack UP (perpetual) and cover (perpetual) to allies in the same row as self",
+    "Upon HP falling below 50%, grants self 60% damage cut (perpetual)(non-stacking) <Pact 15> grants self 60% damage cut (perpetual)(non-stacking), 30% recovery (perpetual)(non-stacking) and cover (perpetual)(non-stacking)",
+    "Deals damage to a single enemy within range"
+  ],
+  [
+    "Derihourai1",
+    "Inflict Attack 142.2% damage on one enemy within range.",
+    "Inflict Attack 186.8% damage on one enemy within range.",
+    "Inflict Attack 368.1% damage on one enemy within range.",
+    "At the start of battle, grant self Attack 45% UP (perpetual) <Pact 15> At the start of battle, grant self Attack 45% UP (perpetual) and Leech 18% (perpetual) and increase zeal by 1.",
+    "When receiving attack damage, grant self Attack 30% UP (1x) (stacking) <Pact 15> When receiving attack damage, grant self Attack 30% UP (1x) (stacking) and Attack 100% UP (3x) (stacking)",
+    "Inflict damage on one enemy within range."
+  ],[
+    "Nuwangi1",
+    "Damage one enemy within range with 169.8% of Attack",
+    "Damage one enemy within range with 222.7% of Attack",
+    "Damage one enemy within range with 387.8% of Attack",
+    "When attacking enemies in a Stunned state, grant self a 90% Attack increase (1x)(Stacking)＜Pact 15＞When attacking enemies in a Stunned state, grant self a 350% Attack increase (1x)(Stacking)",
+    "When attacking enemies in a Stunned state, grant self a 150% Attack increase (1x)(Stacking)＜Pact 15＞When attacking enemies in a Stunned state, grant self a 350% Attack increase (1x)(Stacking)",
+    "Damage one enemy within range"
+    ],
+    [
+      "Kamuchataal1",
+      "Deals Attack damage of 161.4% to a single target within range.",
+      "Deals Attack damage of 161.7% to all enemies within range.",
+      "Deals Attack damage of 337.5 to all enemies within range.",
+      "When taking attack damage, removes self's attack boost and applies Attack reduction of 75% (1x) (Stacking) to opponent. <Pact 15> When taking attack damage, removes self's attack boost, applies Damage Cut of 50% (1x) (Stacking) to self and Attack reduction of 75% (1x) (Stacking) to opponent.",
+      "When attacking, applies an Attack boost of 15% (5x) (Stacking) to self. <Pact 15> When attacking, applies an Attack boost of 15% (5x) (Stacking), Attack boost removal resistance (Perpetual) to self, and heals self and surrounding allies for 7% of max HP.",
+      "Deals damage to a single target within range."
+      ],
+      [
+        "Suwonkas1",
+        "Deal attack damage of 196.2% to a single enemy within range.",
+        "Deal attack damage of 257.5% to a single enemy within range.",
+        "Deal attack damage of 448.9% to a single enemy within range.",
+        "At the start of battle, inflict a 30% attack decrease on all enemies (perpetual). <Pact 15> At the start of battle, grant self 240% attack increase (perpetual) and inflict 30% attack decrease and 6000 HP-based damage limit increase (perpetual) on all enemies",
+        "Inflict Poison (12s) on the target of the attack. <Pact 15> Inflict Poison (12s) on the target of the attack and additionally, if the attack target is in Poison state, grant Recovery 10% (3s) (Stacking) and Poison (3s) to surrounding allies.",
+        "Deal damage to a single enemy within range."
+        ]
+]

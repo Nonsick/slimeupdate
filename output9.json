@@ -1,0 +1,55 @@
+[
+  [
+    "Natriitri1",
+    "Deal 309.3% attack damage to one enemy within range, apply Electrify(5s)(Stacking) to self",
+    "Deal 309.3% attack damage to all enemies within range, decrease Damage Cut by 30%",
+    "Apply Barrier(Durability 32,768)(Perpetual)(Stacking) and Electrify(30s)(Stacking) to all allies within range",
+    "At the start of battle, apply Burn Resistance(Perpetual), Poison Resistance(Perpetual), Curse Resistance(Perpetual), and Electrify(15s) to self",
+    "When Electrify is applied to self, apply Barrier(Durability 20,000)(Perpetual)(Stacking) and Damage Cut35%(10s)(Stacking) to self and allies within range",
+    "Deal damage to one enemy within range"
+  ],
+  [
+    "Emusiri1",
+    "Grants a single ally within range with Damage Immunity (12s) and a 1500 attack boost (12s) (Stacking)",
+    "Removes curses and burns from all allies within range, and grants them 90% attack boost (15s) (Stacking)",
+    "Deals 171.5% attack damage to all enemies within range",
+    "Upon battle start, grants self a 70% attack boost (Perpetual) and grants front-facing allies Hostility (Perpetual) and Damage Immunity (10x) <Pact 15> Upon battle start, grants self a 70% attack boost (Perpetual) and grants front-facing allies 145% attack boost (Perpetual), Hostility (Perpetual), 20% Leech (Perpetual) and Damage Immunity (10x)",
+    "When attacking, grants self and front-facing allies Damage Immunity (1x) and 80% attack boost (1x) (Stacking) <Pact 15> When attacking, reduces target's damage cut by 1%, grants self and front-facing allies Damage Immunity (1x), 225% attack boost (1x) (Stacking) and barrier (durability 1230) (Perpetual)(Stacking)",
+    "Deals damage to a single enemy within range"
+  ],
+  [
+    "Mahomi1",
+    "Deals 100% Attack damage to one enemy in range and its behind, and grants self 275% Attack UP (15s)(Stacking)",
+    "Deals 102.7% Attack damage to all enemies in range, reduces Damage Cut by 20%, and grants self Attack Speed Up (3x)",
+    "Deals 456.3% Attack damage to one enemy in range, grants self Attack UP Seal (Perpetual) and increases Zeal by 2",
+    "At the start of battle, grants self Attack Speed Up (10x) and increases Zeal by 1",
+    "On attack, grants self 30% Attack UP (Perpetual)(Stacking) and Evade (1x)",
+    "Deals damage to one enemy in range"
+  ],
+  [
+    "Mahomi2",
+    "Deal 150% attack damage to one target within range, removes Evade and Damage Immune, reduces Damage Cut by 50%, and adds 55% attack up (1s) (stacking) for each gauge of zeal to oneself.",
+    "Deal 369% attack damage to all targets within range, reduce Damage Cut by 50%, remove own attack up seal, and adds attack up seal resistance (15s) to oneself.",
+    "Add attack 100% up (perpetual) (stacking) and healing 100% up (perpetual) (stacking) and HP-based damage limit 7,777 (77s) to all allies within range and increase Zeal by 1 for each ally.",
+    "When attacking, add 255% attack up (1x) (stacking) to oneself and increases Zeal increase rate 7% (1s) (stacking) and Evade (1x) to all allies.",
+    "When one's self is afflicted with Curse or takes attack damage, remove own curse, add 127% attack up (2x) (stacking) and leech 15% (2x) (stacking) and reduce chain attack cooldown time by 5%",
+    "Deal damage to one target within range"
+  ],
+  [
+    "Mutsumi1",
+    "Deals 234% Attack damage to one enemy in range and removes own Curse, and grants Curse resistance (10s).",
+    "Deals 270% Attack damage to one enemy in range and removes Damage Cut, Damage Immunity, and Evade",
+    "Deals 999.6% Attack damage to all enemies in range and applies Damage Cut Seal(30s)",
+    "On taking damage, grants self Attack 195%UP (1x)(Stacking) and Damage Immunity(1x) ＜Pact 15＞ On taking damage, grants self and back row allies Attack 63%UP (3x)(Stacking) , self Attack 195%UP (1x)(Stacking) and Damage Immunity(1x)",
+    "On removing own Damage Immunity status, grants self and back row allies Damage Cut 22% (1x)(Stacking). ＜Pact 15＞ On removing own Damage Immunity status, grants self and back row allies Damage Cut 40% (1x)(Stacking) and Recovery 20% (1x)(Stacking) and grants self Attack 63%UP (6x)(Stacking)",
+    "Deals damage to one enemy in range"
+  ],[
+    "Genjimaru1",
+    "Inflict 105.7% of Attack damage on one enemy and reduce their Damage Cut by 50%",
+    "Inflict 119.3% of Attack damage on one enemy and reduce the cool down of the user's Chain Attack by 20%",
+    "Inflict 192.5% of Attack damage on one enemy and the enemy behind it, and grant self Evade(15s) and Attack Speed Up(15s)",
+    "When attacking, grant self Evade(1x) and Attack 400%UP(1x)(Stacking) ＜Pact 15＞ At the start of the battle, grant self AttackUP seal resistance(Perpetual) and multiply the max HP by 30%, when attacking, grant self Evade(1x) and Attack 650%UP(1x)(Stacking)",
+    "When self Evade state is removed, grant self Attack Speed Up(1x) and Damage Cut33%(1x)(Stacking) ＜Pact 15＞ When self Evade state is removed, grant self Attack 260%UP(5s)(Stacking) Element Advantage20%(2s)(Stacking), Attack Speed Up(1x), Damage Cut33%(1x)(Stacking) and non-stacking Damage Cut33%(6s) and shorten the Chain Attack cool down by 3 seconds",
+    "Inflict damage on one enemy in range"
+    ]
+]

@@ -1,0 +1,56 @@
+[
+  [
+    "Kareeti1",
+    "Deals Attack 111.4% damage to a single enemy and its adjacent enemy, removes and seals Damage Immune (8s)",
+    "Deals Attack 111.4% damage to a single enemy and its adjacent enemy, removes and seals Evade (8s)",
+    "Deals Attack 203.6% damage to all enemies, removes and seals Damage Cut (30s)",
+    "When inflicted with Curse or upon attack, removes own Curse and grants Attack 640% UP (1x)(Stacking)",
+    "When inflicted with Poison or upon receiving attack damage, grants Damage Cut 33% (2x)(Stacking) and curses all enemies (12s)",
+    "Deals damage to a single enemy"
+    ],
+    [
+    "Kareeti2",
+    "Deals Attack 216.3% damage to a single enemy, removes and seals Curse Removal (15s), lowers Damage Cut 60% and grants Attack Speed Up (3x)",
+    "Deals Attack 253.2% damage to a single enemy, and applies Attack UP Seal (8s) and Burn Accumulation",
+    "Deals Attack 398.3% damage to all enemies, and applies Burn Accumulation and increases HP-based Damage Limit 9,999 (Perpetual)(Stacking)",
+    "Upon attack, curses the target (5s) and grants oneself Evade (1x) and Attack 296% UP (1x)(Stacking)",
+    "When own Evade status is removed, grants oneself Attack 96% UP (3s)(Stacking) and Damage Cut 20% (3s)(Stacking) and grants the allies behind a Curse (1s), Attack Speed Up (1x) and Healing 51% UP (4s)(Stacking)",
+    "Deals damage to a single enemy"
+    ],    
+    [
+      "Sanachita1",
+      "Deals 100.3% attack damage to all enemies and grants self Hostility (15s) and shortens Chain Attack cooldown by 15%.",
+      "Deals 151.5% attack damage to all enemies, inflicting Burn (15s) and grants Hostility (5s) to all allies.",
+      "Deals 222.2% attack damage to all enemies and inflicts Burn Accumulation",
+      "Grants Attack 200% UP (1x) (Stacking) and Attack Speed Up (1x) to front and back allies when attacking.",
+      "Removes self's Hostility and grants Attack Speed Up (1x) and Attack 100% UP (3x) (Stacking) when receiving attack damage or when granted Zeal Gain Up.",
+      "Deals damage to one enemy within range."
+      ],
+      [
+        "Sanachita2",
+        "Removes freeze from all allies within range and increases attack by 40% (perpetual, stacking), increases zeal growth rate by 5% for 10 seconds (stacking) for each ally, increases HP-based damage limit by 35,000 for enemies (4 seconds, stacking) and moves oneself to the front line if there are no allies in front during the end of a chain attack",
+        "Deals 244.3% attack damage to one enemy and one adjacent enemy within range, decreases damage cut by 50%, applies freeze (5 seconds, stacking) and shortens chain attack cooldown by 15%",
+        "Deals 369.9% attack damage to all enemies within range, applies freeze (40 seconds, stacking) and damage cut seal (40 seconds)",
+        "When attacking, increases oneself's attack by 394% (1x, stacking) and grants recovery by 15% (3x, stacking), attack speed up and zeal growth rate by 10% (1 second, stacking) to allies in the front line",
+        "When attacking or taking attack damage, applies drenched (1 second, stacking) to the target and increases attack by 123% (3x, stacking), attack speed up to allies in the back line, grants oneself evade (1x) and damage cut 25% (1x, stacking)",
+        "Deals damage to one enemy within range"
+        ],
+        [
+          "Amaterasu1",
+          "Grants Health64%(16s)(Stacking) to all allies within range, and grants oneself Electrify(8s)(Stacking) and Zeal1gauge Attack64%UP(8s)(Stacking)",
+          "Deals 128% Attack damage to one enemy within range and its adjacent enemy, removes Damage Cut and Damage Immune and Evade",
+          "Deals 999.6% Attack damage to all enemies within range and grants oneself Stun(16s), inflicting 32% damage of one's max HP",
+          "Upon the start of battle, grants oneself Attack256%UP(Perpetual) Burn resistance (Perpetual) Poison resistance (Perpetual) and Curse resistance (Perpetual)",
+          "When Electrify is granted to oneself, grants Drenched resistance (16s) and Health32%(16s)(Stacking) to all allies and recovers 16% of one's max HP",
+          "Deals damage to one enemy within range"
+          ],
+          [
+          "Amaterasu2",
+          "Deals 218.9% Attack damage to all enemies within range and decreases Damage Cut by 64%, grants oneself Zeal1gauge Attack64%UP(8s)(Stacking)",
+          "Deals 250.4% Attack damage to all enemies within range, grants Sleep(8s) to them, and grants oneself Regeneration16%(16s)(Stacking)",
+          "Deals 999.6% Attack damage to all enemies within range, removes one's Sleep, and grants Sleep resistance(32s)",
+          "Upon attacking grants oneself Sleep(Perpetual) and Zeal increase speed 64%UP(Perpetual)(Non-Stacking) and grants Electrify(6s)(Non-Stacking) and Attack32%UP(6s)(Stacking) to oneself and surrounding allies",
+          "Upon receiving attack damage, removes one's Sleep and Zeal Gain Up and grants Attack64%UP(8s)(Stacking) Attack Speed Up(1x) Recovery32%(16s)(Non-Stacking) and Damage Cut16%(2x)(Stacking)",
+          "Deals damage to one enemy within range"
+          ]
+]

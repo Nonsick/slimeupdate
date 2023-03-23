@@ -1,0 +1,56 @@
+[
+  [
+    "Matsuri1",
+    "Deals 238.3% attack damage to all enemies within range, decreases Damage Cut by 30% and shortens own Chain Attack cooltime by 20%.",
+    "Removes Curse from all allies within range, grants Barrier (19,000 HP) (Perpetual)(Stacking), shortens own Chain Attack cooltime by 20% and grants Attack Speed Up (3x).",
+    "Grants Curse resistance (35s), Recovery 45% (5x)(Stacking), Leech 45% (5x)(Stacking), Attack 55% UP (Perpetual)(Stacking) and for each ally, grants Zeal speed increase 10% UP (10s)(Stacking) to all allies within range.",
+    "Upon battle start or 3rd Chain Attack activation, grants self Attack 200% UP (Perpetual)(Stacking).",
+    "When attacking, recovers all allies by 2% of their maximum HP, grants Attack Speed Up (1x) and Attack 150% UP (1x)(Stacking) and Healing 150% UP (1x)(Stacking) to allies in the same row.",
+    "Deals damage to one enemy within range."
+  ],
+  [
+    "Matsuri2",
+    "Deals 215% attack damage to all enemies within range, removes Evade and grants Evade Seal (10s) and Attack UP Seal (10s) and decrease Damage Cut by 45%",
+    "Recovers all allies within range by 45% of their maximum HP, removes Zeal speed decrease, grants Damage Cut 35% (10s)(Stacking) and Damage Cut decrease resistance (10s) and HP-based Damage Limit 1,515 (10s).",
+    "Deals 405% attack damage to all enemies within range, grants Attack 100% UP (Perpetual)(Stacking), Healing 100% UP (Perpetual)(Stacking), Leech 4% (45s)(Stacking) and Health 20% (45s)(Stacking) to all allies.",
+    "Upon battle start, grants self Attack 450% UP (Perpetual) and Recovery 20% (Perpetual) and grants Health 70% (Perpetual) to all allies.",
+    "When attacking, shortens own Chain Attack cooltime by 5% and grants Attack 120% UP (1x)(Stacking), Attack Speed Up (1x) and Recovery 10% (1x)(Stacking) to allies in the same row and behind.",
+    "Deals damage to one enemy within range."
+  ],
+  [
+    "Moznu1",
+    "Deals 83.4% attack damage to one enemy within range and the enemy behind it.",
+    "Deals 87.9% attack damage to all enemies within range.",
+    "Deals 138.2% attack damage to all enemies within range and deals 100% of own maximum HP damage to self.",
+    "When attacking, grants self Attack 395% UP (1x)(Stacking) and Evade (2s)<Pact 15> also, targets hit HP-based Damage Limit 3000 increased(6s)(Stacking), removes own HP-based Damage Limit and grants Attack 395% UP (1x)(Stacking) and Evade (2s).",
+    "Upon death, grants Stun (5s) and Poison Accumulation to all enemies <Pact 15> Upon death, grants self Attack 315% UP (Perpetual)(Stacking) and shortens own Chain Attack cooltime by 76%, grants Stun (5s) and Poison Accumulation and HP-based Damage Limit 8000 increase (20s)(Stacking) to all enemies.",
+    "Deals damage to one enemy within range."
+  ],
+  [
+    "Unkei1",
+    "Remove own AttackUP seal and grants Hostility(10s) and Damage Cut50%(10s)(Stacking) and Attack Speed Up(10s)",
+    "Deal 136.9% Attack damage to one enemy in range and lowers Damage Cut by 50%",
+    "Deal 321.4% Attack damage to all enemies in range and grant Drenched(30s)(Stacking)",
+    "When attacking or taking attack damage, removes own Evade and grants Attack255%UP(1x)(Stacking)",
+    "When own HP falls below 50%, grant self Attack270%(Perpetual)(Stacking) and Zeal increase speed 20%UP(Perpetual)(Non-Stacking)",
+    "Deal damage to one enemy in range"
+  ],
+  [
+    "Haku1",
+    "Removes Fear, Curse, and AttackUP seals from all allies within range and grants them Barrier (Durability 19,000) (Perpetual) (Stacking) and Damage Immunity (1x).",
+    "Grants all allies within range Attack Speed Up (1x) and Attack 89% UP (15s) (Stacking), and induces Fear (15s) on all enemies.",
+    "Deals 489.8% attack damage to all enemies within range and reduces the cooldown of Chain Attack of all allies except oneself by 89%.",
+    "At the start of battle, grants self Zeal increase speed 150% UP (6s) and Resurrection (1x) at 50% max HP on death and Fear resistance (Perpetual). Also the player and all allies' experience gain is doubled after battle and expeditions.",
+    "Inflicts Poison Accumulation on the target of the attack and grants self Attack 365% UP (Perpetual) (Non-Stacking) and Barrier (Durability 500) (Perpetual) (Stacking).",
+    "Deals damage to one enemy within range."
+  ],
+  [
+    "Haku2",
+    "Removes Fear and Barrier seal from all allies and gives Element Advantage25%(5s)(Stacking), Fear resistance(15s) and Barrier seal resistance(15s) and shortens the cooldown of deadly 1st chain attack by 25%.",
+    "Deals 201.7% Attack damage to all enemies, inflicts Fear(15s) and lower Damage Cut by 89% and grants all allies with Attack Speed Up(3x) and shortens the cooldown of deadly 2nd chain attack by 25%.",
+    "Deals 600.3% Attack damage to all enemies, grants self a Resurrection(1x)(Stacking) when HP falls to 90% at death and shortens Chain Attack cooldown by 89%. grants all allies with a godly principle(10s) and Attack 68%UP(Perpetual)(Stacking).",
+    "At the start of battle, grants self with Attack365%UP(Perpetual), Fear resistance(Perpetual) and godly principle(Perpetual) and extends the time limit by 30 seconds. After the battle, grants experience and Zen to player and all allies by 1.8 times.",
+    "Removes Attack Speed Up of target, inflict Attack Speed Up seal(1s) and PoisonAccumulation to the target and grant self and allies in the same column with Attack90%UP(3s)(Stacking) and Barrier(耐久値890)(Perpetual)(Stacking).",
+    "Deals damage to one enemy in range."
+  ]
+]

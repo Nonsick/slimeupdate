@@ -1,0 +1,55 @@
+[
+  [
+    "Vurai1",
+    "Deal 106.3% Attack damage to all enemies in range.",
+    "Deal 139.6% Attack damage to all enemies in range.",
+    "Grant self 120% Attack UP (Perpetual)(Stacking)",
+    "\n When attacking, grant self 40% Attack UP (4x)(Stacking)\n ＜Pact 15＞\n When attacking, grant self 85% Attack UP (4x)(Stacking) and when the target is under Burn condition, grant self 20% leech (1x) and normal Attack Speed Up (1x)",
+    "\n When taking attack damage, grant self 20% Damage Cut (1x)(Stacking) and inflict Burn (12s) to the adjacent enemies.\n ＜Pact 15＞\n When taking attack damage, grant self 100% Attack UP (2x)(Stacking) and 40% Damage Cut (1x)(Stacking) and inflict Burn (12s) to the adjacent enemies.",
+    "Deal damage to one enemy in range"
+  ],
+  [
+    "Maroro1",
+    "Inflict 62% attack damage to one enemy within range",
+    "Inflict 81.3% attack damage to all enemies within range",
+    "Inflict 134.9% attack damage and Burn (30s) to all enemies within range",
+    "\n At the start of battle, grant self 300% attack UP (Perpetual) \n ＜Pact 15＞\n At the start of battle, grant self 300% attack UP (Perpetual) and grant all fire-attribute allies 120% attack UP (Perpetual) and Attack-down resistance (Perpetual)",
+    "\n On attack, grant target Burn (12s)\n ＜Pact 15＞\n On attack, grant target Burn (12s) and Curse (5s) and grant self and surrounding allies 200% attack UP (3s) (Stacking)",
+    "Inflict damage to one enemy within range"
+  ],
+  [
+    "Kiwru1",
+    "Inflict 143.6% attack damage on a single enemy within the area",
+    "Inflict 188.3% attack damage on a single enemy within the area",
+    "Inflict 275% attack damage on all enemies within the area and inflict stun (5s)",
+    "\n Upon attacking, grant self 25% attack increase (3x)(stacking) \n ＜Pact 15＞\n Upon attacking, grant self 180% attack increase (3x)(stacking) and grant self and front row allies 14% increase in zeal's increasing speed (1s)(stacking) for each ally",
+    "\n Upon taking attack damage, self recover 750, and remove poison.\n ＜Pact 15＞\n Upon taking attack damage, self recover 750 and remove poison. Also, self and front row allies recover 2% max HP, granting Recovery 13% (15s) (Non-stacking) and Attack Speed Up (1x) to self",
+    "Inflict damage on a single enemy within the area"
+  ],
+  [
+    "Kiwru2",
+    "Inflict 120.5% healing damage to one enemy within the range.",
+    "Inflict 120.5% healing damage to all enemies within the range.",
+    "Inflict 173.5% healing damage to all enemies within the range and remove burn from all allies.",
+    "At the start of the battle, grant self 118% increase in healing (Perpetual).",
+    "At the start of the battle, multiply self's maximum HP by 100%.",
+    "Heal one ally within the range."
+  ],[
+    "Shichirya1",
+    "Heals all allies within range for 2,150",
+    "Heals all allies within range for 4,300",
+    "Heals all allies within range for 4,300 and grants them a 30% increase in attack power",
+    "\n When attacking, heals adjacent allies for 800\n ＜Pact 15＞\n When attacking, heals adjacent allies for 800 and all allies for 2% of their maximum health and grants a 110% increase in attack power",
+    "\n At the start of battle, grants all enemies a 30% decrease in attack power.\n ＜Pact 15＞\n At the start of battle, increases Zeal by 1 and all enemies with a 30% decrease in attack power and a 35% decrease in Zeal's increase rate(80s)",
+    "Damages an enemy within range"
+    ],
+    [
+      "Tokifusa1",
+      "Deals 80.8% attack damage to a single enemy within the range",
+      "Deals 99.2% attack damage to a single enemy within the range",
+      "Deals 163.9% attack damage to all enemies within the range",
+      "\n At the start of battle, grants self 300% attack up (perpetual)\n ＜Pact 15＞\n At the start of battle, grants self 620% attack up (perpetual)",
+      "\n When attacking, applies 45% attack down (5s)(Stacking) to the target\n ＜Pact 15＞\n When attacking, applies 45% attack down (5s)(Stacking) to the target and reduces chain attack cool time by 16%",
+      "Deals damage to a single enemy within the range"
+      ]
+]

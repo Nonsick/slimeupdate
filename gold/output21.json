@@ -1,0 +1,56 @@
+[
+  [
+    "Juuni2",
+    "All allies within range have their Fear and Attack Down effects removed, grant Fear resistance (12s) and Attack Down resistance (12s), and grant Zeal1gauge per ally Attack 20%UP (12s)(Stacking) and Zeal increase speed per ally 5%UP (12s)(Stacking)",
+    "All enemies within range are dealt an attack damage of 221.3% and have their Damage Cut removed, and oneself grants oneself the effect of Resurrection (1x)(Stacking) when one has 12% of maximum HP at death",
+    "All enemies within range are dealt an attack damage of 351.1% and are granted Zeal increase speed 100% Down (8s)(Stacking) and Stun (8s)",
+    "At the start of battle, oneself grants oneself an Attack 372%UP (Perpetual) and multiply all allies' maximum HP by 60%. After battle, Zen gained is doubled",
+    "Allied in the same column and the front allies of the target hit will be granted Attack 112%UP (3s)(Stacking), Attack Speed Up(1x) and Damage Cut 12% (1x)(Stacking)",
+    "Deal damage to one enemy and the same column enemies."
+    ],
+    [
+      "Hakuowlo1",
+      "Deals 289.2% Attack damage to all enemies in range, removes Damage Immune and Evade, and destroys Barrier",
+      "Deals 289.2% Attack damage to all enemies in range, and applies Fear (15s)",
+      "Grants Element Advantage 70% (30s) (Stacking) to all allies in range, and for each ally, grants a 10% increase in Zeal increase speed (10s) (Stacking)",
+      "At the start of battle, grants Perpetual Divine Reason to all allies, grants oneself 365% Attack UP (Perpetual), Fear resistance (Perpetual) and at death, resurrection with 50% max HP (1x) , and increases maximum Zeal by 5. After battle or expedition, Player and all allies experience gain is doubled.",
+      "On receiving healing, grants 89% Attack UP (1x) (Stacking) to target and Healing 8,906 UP (1x) (Stacking) to surrounding allies, and grants oneself 8,906 Attack UP (1x) (Stacking) and 1% Health (8s) (Stacking)",
+      "Deals damage to one enemy in range"
+      ],
+      [
+        "Ulthury & Karulau1",
+        "Deals 204% Attack damage to one enemy in range, removes Zeal increase speed down from all allies, removes oneself's Damage Cut and grants 300% Attack UP (5s) (Stacking)",
+        "Deals 204% Attack damage to one enemy in range, and grants Burn [Accumulation] (15s) and Drenched (15s) (Stacking) and reduces Damage Cut by 50%",
+        "Deals 408% Attack damage to all enemies in range and grants Electrify (30s) (Stacking) to all allies",
+        "Grants oneself Damage Cut 33% (1x) (Stacking) and 150% Attack UP (2x) (Stacking) when attacking or receiving attack damage",
+        "Grants oneself 110% Attack UP (2x) (Stacking) when receiving healing or canceling oneself's Damage Cut state and grants Damage Cut 24% (2x) (Stacking) and Attack Speed Up (1x) to same-line and adjacent allies",
+        "Deals damage to one enemy in range"
+        ],
+        [
+          "Asura1",
+          "Deals 204% Attack damage to one enemy in range, and reduces Damage Cut by 70%",
+          "Deals 204% Attack damage to one enemy in range and grants Damage Cut reduction resistance (10s) to all allies",
+          "Deals 408% Attack damage to all enemies in range, and fully recovers oneself's HP",
+          "At the start of battle or during 3rd Chain Attack, grants oneself 666% Attack UP (18x) (overwrite) and 50% Damage Cut (30x) (overwrite), 60% Health (Perpetual) (Stacking) and Cover (Perpetual) (Non-Stacking)",
+          "When receiving attack damage, shortens Chain Attack and cooldown by 1 second, removes Burn and Stun from oneself and allies behind oneself, grants 77% Attack UP (2x) (Stacking), 77% Healing UP (2x) (Stacking), and 15% Recovery (1x) (Stacking)",
+          "Deals damage to one enemy in range"
+          ],
+          [
+            "Memuru1",
+            "Removes freeze from all allies in range, grants Attack Speed Up (1x) and grants 144% Attack UP (30s) (Stacking) to all fire and water attribute allies in range",
+            "Deals 234.9% Attack damage to all enemies in range and grants Poison [Accumulation] (15s) Drenched (15s) (Stacking) and 50% decrease in Zeal increase speed (15s) (Stacking) and reduces Damage Cut by 40%",
+            "Deals 393.2% Attack damage to all enemies in range, and grants Attack UP Seal (25s) and 100% Attack Down (25s) (Stacking)",
+            "At the start of battle, grants oneself 240% Attack UP (Perpetual) and grants Health 120% (Perpetual) to oneself and allies in the same row",
+            "When attacking, grants 10% increase in Zeal increase speed (1s) (Stacking), 100% Attack UP (1x) (Stacking) and Burn (2s) to oneself and allies behind oneself, and fully recovers 1% of oneself's maximum HP",
+            "Deals damage to one enemy in range"
+            ],
+            [
+              "Yukaura1",
+              "Deals 202% Attack damage to all enemies within range, reduces Damage Cut by 89%, grants Damage Cut Seal (8s), removes Chained from all allies and grants Chained resistance (15s)",
+              "Deals 289.3% Attack damage to all enemies within range, grants Sleep (4s), grants oneself 90% Attack Up (Perpetual)(Stacking), 89% max HP Resurrection (1x)(Stacking), and Attack Speed Up (10s)",
+              "Deals 600.3% Attack damage to all enemies within range, grants Resurrection Seal (90s), grants oneself 89% Element Advantage (10s)(Stacking) and Time Stop (10s) to all but oneself.",
+              "At the start of battle, grants oneself 365% Attack Up (Perpetual), 130% Zeal increase speed Up (6s), Poison resistance (Perpetual), Burn resistance (Perpetual), Curse resistance (Perpetual) and Chained resistance (Perpetual) and increases maximum Zeal by 5, grants Fire attribute, Water attribute, Wind attribute and Earth attribute allies Fear resistance (Perpetual) and God Possession (Perpetual)",
+              "Deals 2% maximum HP damage to the target upon attack, removes Evade and Damage Immune, grants HP-based Damage Limit 9,089 Up (3s)(Stacking), Evade Seal (1s), Damage Immune Seal (1s), grants oneself Reflect Barrier (Durability 8,990)(3s)(Stacking), heals all allies by 2% maximum HP and grants 89% Attack Up (3s)(Stacking)",
+              "Deals damage to one enemy and the same column enemies within range."
+              ]
+]

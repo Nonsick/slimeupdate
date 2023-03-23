@@ -1,0 +1,54 @@
+[
+  [
+    "Raiko1",
+    "Removes Fear and slows down Zeal increase rate of all allies, grants Zeal increase rate resistance (15s), Attack 255% UP (3x) (Stacking), Additional damage 99% (3x) (Stacking) and summons a Shikigami Soldier (Lv10) on an ally's empty spot.",
+    "Deals 180% damage to all enemies and grants them Shock (6s), increases HP-based damage limit to 9,999 (9s) (Stacking), slows down Zeal increase rate by 50% (9s) (Stacking) and seals Zeal gain up (9s)",
+    "Deals 360% damage to all enemies and shortens cool-down of 1st Chain Attack and 2nd act of all allies excluding self by 99 seconds",
+    "Grants Attack speed up (1x) and Attack 99% UP (1x) (Stacking) to allies on the same row and front when attacking. If the target of the attack is in Shock state, grants Attack 99% UP (3x) (Stacking) to all allies and removes Electrify of all enemies and allies",
+    "Grants Burn [Accumulation] (3s) to the target of the attack and Attack 99% UP (3x) (Stacking) and Additional damage 99% (1x) (Stacking) to allies in the front row. If Zeal gauge is less than 3 when attacking, increases self's Zeal by 1.",
+    "Deals damage to one enemy within range."
+  ],
+  [
+    "Mikazuchi1",
+    "Deal 179.9% attack damage to a single enemy",
+    "Deal 232.9% attack damage to a single enemy",
+    "Deal 343% attack damage to a single enemy and apply Electrify (15s)(Stacking) to self",
+    "\n At the start of battle, apply Attack190%UP(Perpetual) to self\n <Pact 15>\n At the start of battle, apply Attack480%UP(Perpetual) and Drenched resistance(Perpetual) to self",
+    "\n When Electrify is applied to self, shorten the cool time of self Chain Attack by 40% and apply Attack85%UP(15s)(Stacking)\n <Pact 15>\n When Electrify is applied to self, re-apply Damage Cut 60%(10s)(overwrite) to self and apply Attack100%UP(15s)(Stacking) and Attack Speed Up(10s) to self and shorten the cool time of Chain Attack by 40%",
+    "Deal damage to a single enemy"
+  ],
+  [
+    "Aruruu1",
+    "Deals 218.7% attack damage to a single enemy and the enemy behind it, destroying their Barrier and granting self Leech 30% (1s)(Stacking)",
+    "Deals 218.7% attack damage to a single enemy, reducing Damage Cut by 50% and granting self Health 100% (15s)(Stacking)",
+    "Deals 383.7% attack damage to all enemies, removes Evade and applies Evade Seal (30s)",
+    "At the start of battle, grants self 210% Attack Up (Perpetual) and increases maximum HP by 83%. When healing, grants self 200% Attack Up (1x)(Stacking)",
+    "When taking attack damage, applies Drenched (1s)(Stacking) to the target and grants self 120% Attack Up (10s)(Stacking) and Leech 5% (10s)(Stacking)",
+    "Deals damage to a single enemy in range"
+    ],
+    [
+      "Oboro1",
+      "Deals 275.9% attack damage to a single enemy.",
+      "Deals 275.9% attack damage to all enemies and applies Stun(3s)",
+      "Deals 565.6% attack damage to all enemies and increases Oboro's Zeal by 2",
+      "When 1st Chain Attack activates, grants Oboro Attack 28%UP(Perpetual)(Stacking) and Evade(Zeal1gauge per second)<Pact 15>When 1st Chain Attack activates, grants Oboro Attack 77%UP(Perpetual)(Stacking) and Evade(Zeal1gauge per second)and shortens Chain Attack's cool down by 20%",
+      "At the start of battle, grants Oboro Evade(10x) and increases Zeal by 1 <Pact 15>At the start of battle, grants Oboro Attack 140%UP(Perpetual), Evade(10x) and Zeal Increase Speed 130%UP(6s) and increases Zeal by 1",
+      "Deals damage to a single enemy within the range."
+      ],[
+        "Aruruu2",
+        "Deals 272% attack damage to one enemy, grants the user Cover (20s)(Stacking).",
+        "Deals 385.4% attack damage to one enemy and recovers 20% of the user's max HP",
+        "Deals 466.5% attack damage to all enemies and grants all allies Electrify (15s)(Stacking).",
+        "When attacked, user will be healed for 800HP. < Pact 15 > When attacked, user will gain Electrify (10s)(Non-Stacking) and 5% of max HP and healed for 800HP.",
+        "When the user's HP drops below 70%, user will gain Damage Cut58%(Perpetual)(Non-Stacking) and Cover (15s)(Non-Stacking) < Pact 15 > When the user's HP drops below 70%, user will gain Damage Cut58%(Perpetual)(Non-Stacking) Recovery10%(Perpetual)(Non-Stacking) Health60%(Perpetual)(Non-Stacking) and Cover (15s)(Non-Stacking).",
+        "Deals damage to one enemy within range."
+        ],[
+          "Aruruu3",
+          "Deals 152% attack damage to all enemies and decreases their damage cut by 30%",
+          "Deals 124.5% attack damage to all enemies and afflicts them with Poison Accumulation and Stun (5s)",
+          "Increases own Zeal by 2 and grants all allies in range Evade (3x) and Recovery 35% (30s) (Stacking)",
+          "At the start of the battle, increases all allies maximum HP by 60% and grants them Recovery 30% (Perpetual)< Pact 15 > At the start of the battle, increases own Zeal by 2, increases all allies maximum HP by 60%, grants them Recovery 30% (Perpetual), Stun resistance (Perpetual), Attack 120%UP (Perpetual) and Regeneration 4% (Perpetual)",
+          "When attacking, grants self and front-row allies Attack 80%UP (1x) (Stacking) and Evade (1x)< Pact 15 > When attacking, increases target's HP-based Damage Limit 7,122 (4s)(Stacking), removes self and front-row allies' Evade seal, grants Attack 250%UP (1x)(Stacking), Evade (1x) and Damage Cut 35%(1x)(Stacking)",
+          "Deals damage to one enemy in range"
+          ]
+]
