@@ -9,15 +9,21 @@ jobs:
   run-script:
     runs-on: ubuntu-latest
     env:
-      SECRET_CODE: ${{ vars.SECRET_CODE }}
+      SECRET_CODE: ${{ secrets.SECRET_CODE }}
+    defaults:
+      run:
+        shell: bash
+    timeout-minutes: 2
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: Install Node.js
+        with:
+          ref: main # update this to the branch you want to checkout
+          
+      - name: Use Node.js 16.x
         uses: actions/setup-node@v2
         with:
-          node-version: '19.6.0'
+          node-version: '16.x'
 
       - name: Install dependencies
         run: npm install bent jsdom octokit
