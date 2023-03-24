@@ -22,5 +22,8 @@ jobs:
       - name: Install dependencies
         run: npm install bent jsdom octokit
 
-      - name: Run script
+      - name: Update slimeimwiki2.0
         run: node slimeupdate.js
+
+      - name: Update slimeimwiki1.0
+        run: node wikiupdate1-0.js
