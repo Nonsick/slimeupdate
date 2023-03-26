@@ -11,6 +11,7 @@ jobs:
     env:
       SECRET_CODE: ${{ vars.SECRET_CODE }}
     timeout-minutes: 2
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -19,6 +20,14 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '19.6.0'
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       - name: Install dependencies
         run: npm install bent jsdom octokit
