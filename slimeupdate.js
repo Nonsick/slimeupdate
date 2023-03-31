@@ -409,7 +409,6 @@ async function scrapPages() {
 				Events[Event].Octagram = true;
 			else
 				Events[Event].Octagram = false;
-			console.log("scrapping")
 			await scrapCharacters(DOM, Events[Event]);
 			resolve();
 		}))
@@ -528,7 +527,63 @@ async function getData() {
 	Characters = JSON.parse(await pullFile('data/characters.json'));
 	Events = JSON.parse(await pullFile('data/events.json'));
 	ForcesData = JSON.parse(await pullFile('data/forces.json'));
+	// updateForces()
 	getEvents();
 }
 
+
+async function updateForces() {
+	Characters = JSON.parse(await pullFile('data/characters.json'));
+	ForcesData = JSON.parse(await pullFile('data/forces.json'));
+
+	let DOM = await getDOM("https://api-us.ten-sura-m.wfs.games/web/announcement/100000375?region=1&language=2&phoneType=1")
+	let ForcesDivs = DOM.querySelectorAll("table:nth-child(5) > tbody > tr > td")
+	for await (const ForceDiv of ForcesDivs) {
+		if (!ForcesData.find(array => array.includes(ForceDiv.textContent.trim())))
+			ForcesData.push([ForceDiv.textContent.trim(), removeQueryParams(ForceDiv.querySelector("img").src)])
+	}
+	pushFile("data/forces.json", JSON.stringify(ForcesData, null, 4));
+
+	let Items = DOM.querySelectorAll("details > table > tbody > tr")
+	for await (const item of Items) {
+		let Char;
+		for await (const character of Object.keys(Characters))
+		{
+			const Obj = Characters[character]
+			let Name = Obj.Name.split("[")[1].replaceAll("]", "")
+			//remove "The" or "the" from name if it starts with it
+			if (Name.startsWith("The "))
+				Name = Name.replace("The ", "")
+			else if (Name.startsWith("the "))
+				Name = Name.replace("the ", "")
+			if (item.querySelector("td").textContent.includes(Name))
+			{
+				Char = character;
+				break;
+			}
+		}
+		if (Char)
+		{
+			let ForcesNames = item.querySelectorAll("td")[1].innerHTML.split("<br>")
+			ForcesNames.forEach(ForceName => {
+				const Name = ForceName.trim()
+				if (Name != "")
+				{
+					let Force = ForcesData.findIndex(array => array.includes(Name))
+					if (Force != -1)
+					{
+						if (Characters[Char].Forces == undefined)
+							Characters[Char].Forces = [];
+						if (!Characters[Char].Forces.includes(Force))
+							Characters[Char].Forces.push(Force);
+					}
+				}
+			})
+		}
+
+	}
+	pushFile("data/characters.json", JSON.stringify(Characters, null, 4));
+}
+
 getData()
+// updateForces();
