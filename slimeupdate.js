@@ -293,7 +293,7 @@ async function scrapFields(DOM, Character, Key) {
 			NewCharacter.Valor1A = Character.Valor1A ?? (Valor1AName + ":" + Valor1ADescription);
 		}
 	}
-
+	
 	//Character Traits
 	let Trait1Description, Trait1ADescription, Trait1Name, Trait1AName;
 	let TraitSection = Sections.find(el => el.textContent.includes('Character Traits'))
@@ -542,7 +542,7 @@ async function updateForces() {
 		if (!ForcesData.find(array => array.includes(ForceDiv.textContent.trim())))
 			ForcesData.push([ForceDiv.textContent.trim(), removeQueryParams(ForceDiv.querySelector("img").src)])
 	}
-	pushFile("data/forces.json", JSON.stringify(ForcesData, null, 4));
+	// pushFile("data/forces.json", JSON.stringify(ForcesData, null, 4));
 
 	let Items = DOM.querySelectorAll("details > table > tbody > tr")
 	for await (const item of Items) {
@@ -583,7 +583,7 @@ async function updateForces() {
 		}
 
 	}
-	pushFile("data/characters.json", JSON.stringify(Characters, null, 4));
+	// pushFile("data/characters.json", JSON.stringify(Characters, null, 4));
 }
 
 getData()
