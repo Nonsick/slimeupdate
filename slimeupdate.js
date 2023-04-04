@@ -527,7 +527,7 @@ async function getData() {
 	Characters = JSON.parse(await pullFile('data/characters.json'));
 	Events = JSON.parse(await pullFile('data/events.json'));
 	ForcesData = JSON.parse(await pullFile('data/forces.json'));
-	// updateForces()
+	updateForces()
 	getEvents();
 }
 
@@ -564,6 +564,7 @@ async function updateForces() {
 		}
 		if (Char)
 		{
+			Characters[Char].Forces = [];
 			let ForcesNames = item.querySelectorAll("td")[1].innerHTML.split("<br>")
 			ForcesNames.forEach(ForceName => {
 				const Name = ForceName.trim()
