@@ -655,18 +655,18 @@ async function ha() {
     console.log("allDONE")
 
     SiteMap = `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url><loc>https://slimeim.wiki/</loc>`+ ISOSTRING + `</url>
-<url><loc>https://slimeim.wiki/characters/</loc>`+ ISOSTRING + `</url>
+<url><loc>https://old.slimeim.wiki/</loc>`+ ISOSTRING + `</url>
+<url><loc>https://old.slimeim.wiki/characters/</loc>`+ ISOSTRING + `</url>
 `
     Object.keys(CharacterData).forEach((key) => {
         SiteMap = SiteMap + `   <url>
-        <loc>https://slimeim.wiki/characters/` + key + `/</loc>` + ISOSTRING + `
+        <loc>https://old.slimeim.wiki/characters/` + key + `/</loc>` + ISOSTRING + `
     </url>
 `
     })
-    SiteMap = SiteMap + `<url><loc>https://slimeim.wiki/events/</loc>` + ISOSTRING + `</url>
-    <url><loc>https://slimeim.wiki/gacha/</loc>`+ ISOSTRING + `</url>
-    <url><loc>https://slimeim.wiki/daily/</loc>`+ ISOSTRING + `</url>
+    SiteMap = SiteMap + `<url><loc>https://old.slimeim.wiki/events/</loc>` + ISOSTRING + `</url>
+    <url><loc>https://old.slimeim.wiki/gacha/</loc>`+ ISOSTRING + `</url>
+    <url><loc>https://old.slimeim.wiki/daily/</loc>`+ ISOSTRING + `</url>
     </urlset>`
     console.log(SiteMap)
 
