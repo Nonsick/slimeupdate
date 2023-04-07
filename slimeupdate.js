@@ -2,17 +2,22 @@ const bent = require('bent');
 const jsdom = require("jsdom");
 const { Octokit } = require("octokit");
 const virtualConsole = new jsdom.VirtualConsole();
-const octokit = new Octokit({ auth: process.env.SECRET_CODE })
+const octokit = new Octokit({ 
+	auth:
+	process.env.SECRET_CODE
+})
 virtualConsole.on("error", () => { });
 let owner = "Seikirin"
 let repo = "slimeimwiki2.0"
 let Today = new Date()
 let shas = {};
 let FormattedDate = ((Today.getMonth() + 1) + "/" + Today.getDate() + "/" + Today.getFullYear());
-
 let Characters = {};
 let Events = {}
 let ForcesData = [];
+const RetardedAlias = {
+	"Octagram Demon Lord": "Octagram",
+}
 
 
 //TEMP
@@ -433,7 +438,7 @@ async function updateEvents(DOM) {
 	let Items = DOM.querySelectorAll(".event")
 
 	Items.forEach(item => {
-		let Event = Object.keys(Events).find(key => Events[key].Link == item.querySelector("a").href)
+		let Event = Object.keys(Events).find(key => Events[key].Link?.includes(item.querySelector("a").href))
 		if (Event != undefined) {
 			let EventDate = item.querySelector(".event-date").textContent;
 			let Start, End;
@@ -539,8 +544,9 @@ async function updateForces() {
 	let DOM = await getDOM("https://api-us.ten-sura-m.wfs.games/web/announcement/100000375?region=1&language=2&phoneType=1")
 	let ForcesDivs = DOM.querySelectorAll("table:nth-child(5) > tbody > tr > td")
 	for await (const ForceDiv of ForcesDivs) {
-		if (!ForcesData.find(array => array.includes(ForceDiv.textContent.trim())))
-			ForcesData.push([ForceDiv.textContent.trim(), removeQueryParams(ForceDiv.querySelector("img").src)])
+		const Name = RetardedAlias[ForceDiv.textContent.trim()] ?? ForceDiv.textContent.trim()
+		if (!ForcesData.find(array => array.includes(Name)))
+			ForcesData.push([Name, removeQueryParams(ForceDiv.querySelector("img").src)])
 	}
 	// pushFile("data/forces.json", JSON.stringify(ForcesData, null, 4));
 
@@ -567,7 +573,7 @@ async function updateForces() {
 			Characters[Char].Forces = [];
 			let ForcesNames = item.querySelectorAll("td")[1].innerHTML.split("<br>")
 			ForcesNames.forEach(ForceName => {
-				const Name = ForceName.trim()
+				const Name = RetardedAlias[ForceName.trim()] ?? ForceName.trim();
 				if (Name != "")
 				{
 					let Force = ForcesData.findIndex(array => array.includes(Name))
