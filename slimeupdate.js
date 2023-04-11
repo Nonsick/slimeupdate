@@ -232,7 +232,7 @@ async function scrapFields(DOM, Character, Key) {
 		SecretSkillName = SecretSkillSection.parentElement.querySelector(".chara-skills-name").textContent
 		SecretSkillDescription = SecretSkillSection.parentElement.querySelector(".chara-skills-text").textContent
 
-		NewCharacter.SecretType = SecretSkillDescription.toLowerCase().includes("all") ? "All" : "Single"
+		NewCharacter.SecretType = SecretSkillDescription.toLowerCase().includes("all-target") ? "All" : "Single"
 		NewCharacter.Secret = Character.Secret ?? `${SecretSkillName}:${SecretSkillDescription}`
 	}
 	if (EXSecretSkillSection) {
