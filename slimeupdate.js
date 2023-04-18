@@ -117,15 +117,19 @@ let Icons = {
 }
 
 async function getDOM(url) {
-	const getStream = bent(url)
-	let stream = await getStream()
-	stream.status
-	stream.statusCode
-	const str = await stream.text()
-	const dom = new jsdom.JSDOM(str, { virtualConsole });
-	return dom.window.document
-}
-
+	try {
+	  const getStream = bent(url);
+	  const stream = await getStream();
+	  const status = stream.status;
+	  const statusCode = stream.statusCode;
+	  const str = await stream.text();
+	  const dom = new jsdom.JSDOM(str, { virtualConsole });
+	  return dom.window.document;
+	} catch (error) {
+	  console.error(`Error fetching DOM: ${error}`);
+	  return null;
+	}
+  }
 function removeQueryParams(url) {
 	const index = url.indexOf('?');
 	return index === -1 ? url : url.slice(0, index);
@@ -405,8 +409,12 @@ async function scrapPages() {
 		if (Events[Event].Current != true)
 			continue;
 		Promises.push(new Promise(async (resolve, reject) => {
-			console.log(Events[Event].Link)
+			console.log(`Scraping ${Event}...`)
+			console.log(`	Name: ${Event}`)
+			console.log(`	Link: ${Events[Event].Link}`)
 			let DOM = await getDOM(Events[Event].Link)
+			if (DOM == null)
+				return resolve();
 			let ImageElement = DOM.querySelector(".detail-banner > img")
 			Events[Event].Type = DOM.querySelector(".article-category").textContent.trim();
 			Events[Event].Image = removeQueryParams(ImageElement ? ImageElement.src : Icons[Events[Event].Type.trim()])
@@ -532,7 +540,7 @@ async function getData() {
 	Characters = JSON.parse(await pullFile('data/characters.json'));
 	Events = JSON.parse(await pullFile('data/events.json'));
 	ForcesData = JSON.parse(await pullFile('data/forces.json'));
-	updateForces()
+	// updateForces()
 	getEvents();
 }
 
