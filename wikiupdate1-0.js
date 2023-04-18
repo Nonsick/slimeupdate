@@ -20,13 +20,18 @@ let commitnumber = 0
 let commits = []
 
 async function GetPageData(url) {
-    const getStream = bent(url)
-    let stream = await getStream()
-    stream.status
-    stream.statusCode
-    const str = await stream.text()
-    const dom = new jsdom.JSDOM(str, {virtualConsole});
-    return dom
+    try {
+        const getStream = bent(url);
+        const stream = await getStream();
+        const status = stream.status;
+        const statusCode = stream.statusCode;
+        const str = await stream.text();
+        const dom = new jsdom.JSDOM(str, { virtualConsole });
+        return dom;
+      } catch (error) {
+        console.error(`Error fetching DOM: ${error}`);
+        return null;
+      }
 }
 
 const types = {
@@ -364,6 +369,9 @@ async function ha() {
             }
         }
         let dom2 = await GetPageData(Link)
+        if (dom2 == null) {
+            return;
+        }
         if (dom2.window.document.querySelector(".chara-grid")) {
             let allgrids = dom2.window.document.querySelectorAll(".chara-grid")
             for await (const ele of allgrids) {
