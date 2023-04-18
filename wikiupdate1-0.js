@@ -281,7 +281,8 @@ async function ha() {
     const { Octokit } = require("octokit");
     const ISOSTRING = "<lastmod>" + (new Date().toISOString()) + "</lastmod>";
     const octokit = new Octokit({
-        auth: process.env.SECRET_CODE
+        auth:
+        process.env.SECRET_CODE
     })
     path = jsonpath
 
