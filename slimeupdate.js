@@ -1,4 +1,5 @@
 const bent = require('bent');
+const fs = require('fs');
 const jsdom = require("jsdom");
 const { Octokit } = require("octokit");
 const virtualConsole = new jsdom.VirtualConsole();
@@ -166,6 +167,11 @@ function extractPointsRequired(str) {
 	return match ? parseInt(match[1]) : null;
 }
 
+function OutputToJSONFile(file, data) {
+	// append and replace \n with actual newlines
+	fs.appendFileSync(file, JSON.stringify(data, null, 2).replace(/\\n/g, '\n'));
+}
+
 async function scrapFields(DOM, Character, Key) {
 	let GridItems = Array.from(DOM.querySelectorAll(".chara-status-grid-item"))
 	let Sections = Array.from(DOM.querySelectorAll("section"))
@@ -228,40 +234,91 @@ async function scrapFields(DOM, Character, Key) {
 	let SecretSkillDescription, EXSecretSkillDescription, SecretSkillName, EXSecretSkillName,
 		BattleSkill1Description, BattleSkill2Description, BattleSkill1Name, BattleSkill2Name,
 		BattleSkill1Icon, BattleSkill2Icon;
-	let SkillsSection = Sections.find(el => el.textContent.includes('Skill Details'))
+	let SkillsSection = Sections.find(el => el.textContent.includes('Skill Details') && !el.textContent.includes('Secret Skill Details'))
+	let RetardedSecretSection = Sections.find(el => el.textContent.includes('Secret Skill Details'))
 	let EXSecretSkillSection = Array.from(SkillsSection.querySelectorAll(`.chara-skills-category`)).find(ele => ele.textContent == "EX Secret Skill")
 	let SecretSkillSection = Array.from(SkillsSection.querySelectorAll(`.chara-skills-category`)).find(ele => ele.textContent == "Secret Skill")
-	let BattleSkillsSection = Array.from(SkillsSection.querySelectorAll(`.chara-skills-category`)).find(ele => ele.textContent == "Battle Skills")
+	let BattleSkillsSection = Array.from(SkillsSection.querySelectorAll(`.chara-skills-category`)).filter(ele => ele.textContent.includes("Battle Skills"))
+	if (!SecretSkillSection && RetardedSecretSection) {
+		SecretSkillSection = Array.from(RetardedSecretSection.querySelectorAll(`.chara-skills-category`)).find(ele => ele.textContent == "Secret Skill")
+	}
+	if (!EXSecretSkillSection && RetardedSecretSection) {
+		EXSecretSkillSection = Array.from(RetardedSecretSection.querySelectorAll(`.chara-skills-category`)).find(ele => ele.textContent == "EX Secret Skill")
+	}
+	console.log("Character: " + Character.Name);
 	if (SecretSkillSection) {
+		console.log("Character has secret skill")
 		SecretSkillName = SecretSkillSection.parentElement.querySelector(".chara-skills-name").textContent
 		SecretSkillDescription = SecretSkillSection.parentElement.querySelector(".chara-skills-text").textContent
 
 		NewCharacter.SecretType = SecretSkillDescription.toLowerCase().includes("all-target") ? "All" : "Single"
 		NewCharacter.Secret = Character.Secret ?? `${SecretSkillName}:${SecretSkillDescription}`
 	}
+	else
+		console.log("Character has no secret skill")
 	if (EXSecretSkillSection) {
 		EXSecretSkillName = EXSecretSkillSection.parentElement.querySelector(".chara-skills-name").textContent
 		EXSecretSkillDescription = EXSecretSkillSection.parentElement.querySelector(".chara-skills-text").textContent
 
 		NewCharacter.EXSecret = Character.EXSecret ?? `${EXSecretSkillName}:${EXSecretSkillDescription}`
 	}
-	if (BattleSkillsSection) {
-		let BattleSkill1 = BattleSkillsSection.parentElement.querySelectorAll(".chara-skills-grid")[0];
-		let BattleSkill2 = BattleSkillsSection.parentElement.querySelectorAll(".chara-skills-grid")[1];
-		BattleSkill1Name = BattleSkill1.querySelector(".chara-skills-name").textContent;
-		BattleSkill1Description = BattleSkill1.querySelector(".chara-skills-text").textContent;
+	if (BattleSkillsSection.length) {
+		class BattleSkill {
+			constructor(Name, Description, Icon) {
+				this.Name = Name;
+				this.Description = Description;
+				this.Icon = Icon;
+			}
+		}
+		let SkillIndex = 0;
+		let FusionIndex = 0;
+		let BattleSkills = [[],[]]
+		BattleSkillsSection.forEach((ele) => {
+			ele.parentElement.querySelectorAll(".chara-skills-grid").forEach((grid) => {
+				let Name = grid.querySelector(".chara-skills-name").textContent;
+				let Description = grid.querySelector(".chara-skills-text").textContent;
+				let Icon = grid.querySelector("img").getAttribute("src");
+				BattleSkills[SkillIndex][FusionIndex] = new BattleSkill(Name, Description, Icon);
+				if (FusionIndex == 1 || Array.from(grid.parentElement.classList).includes("chara-skills-container"))
+				{
+					FusionIndex = 0;
+					SkillIndex++;
+				}
+				else
+					FusionIndex++;
+			})
+		})
+		for (let i = 0; i < 2; i++) {
+			let Skill = BattleSkills[i][0];
+			let FusedSkill = BattleSkills[i][1];
+			// NewCharacter.Skill1 = Character.Skill1 ?? `${BattleSkill1Name}/Lv.10:${BattleSkill1Description.replace(`Points Required: ${extractPointsRequired(BattleSkill1Description)}`, "")}Cost: ${extractPointsRequired(BattleSkill1Description)}`
+			NewCharacter[`Skill${i+1}`] = Character[`Skill${i+1}`] ?? `${Skill.Name}/Lv.10:${Skill.Description.replace(`Points Required: ${extractPointsRequired(Skill.Description)}`, "")}Cost: ${extractPointsRequired(Skill.Description)}`
+			NewCharacter[`Skill${i+1}Icon`] = Character[`Skill${i+1}Icon`] ?? Skill.Icon
+			if (FusedSkill)
+			{
+				console.log("Fused skill found");
+				NewCharacter[`Skill${i+1}Fused`] = Character[`Skill${i+1}Fused`] ?? `${FusedSkill.Name}/Lv.10:${FusedSkill.Description.replace(`Points Required: ${extractPointsRequired(FusedSkill.Description)}`, "")}Cost: ${extractPointsRequired(FusedSkill.Description)}`
+				NewCharacter[`Skill${i+1}FusedIcon`] = Character[`Skill${i+1}FusedIcon`] ?? FusedSkill.Icon
+			}
+		}
+		// if (FusedBattleSkill2)
+		// 	NewCharacter.Skill2Fused = Character.Skill2Fused ?? `${FusedBattleSkill2.Name}/Lv.10:${FusedBattleSkill2.Description.replace(`Points Required: ${extractPointsRequired(FusedBattleSkill2.Description)}`, "")}`
+		
+			// let BattleSkill1 = BattleSkillsSection.parentElement.querySelectorAll(".chara-skills-grid")[0];
+		// let BattleSkill2 = BattleSkillsSection.parentElement.querySelectorAll(".chara-skills-grid")[1];
+		// BattleSkill1Name = BattleSkill1.querySelector(".chara-skills-name").textContent;
+		// BattleSkill1Description = BattleSkill1.querySelector(".chara-skills-text").textContent;
 
-		BattleSkill2Name = BattleSkill2.querySelector(".chara-skills-name").textContent;
-		BattleSkill2Description = BattleSkill2.querySelector(".chara-skills-text").textContent;
+		// BattleSkill2Name = BattleSkill2.querySelector(".chara-skills-name").textContent;
+		// BattleSkill2Description = BattleSkill2.querySelector(".chara-skills-text").textContent;
 
-		BattleSkill1Icon = BattleSkill1.querySelector("img").getAttribute("src");
-		BattleSkill2Icon = BattleSkill2.querySelector("img").getAttribute("src");
+		// BattleSkill1Icon = BattleSkill1.querySelector("img").getAttribute("src");
+		// BattleSkill2Icon = BattleSkill2.querySelector("img").getAttribute("src");
 
-		NewCharacter.Skill1 = Character.Skill1 ?? `${BattleSkill1Name}/Lv.10:${BattleSkill1Description.replace(`Points Required: ${extractPointsRequired(BattleSkill1Description)}`, "")}Cost: ${extractPointsRequired(BattleSkill1Description)}`
-		NewCharacter.Skill2 = Character.Skill2 ?? `${BattleSkill2Name}/Lv.10:${BattleSkill2Description.replace(`Points Required: ${extractPointsRequired(BattleSkill2Description)}`, "")}Cost: ${extractPointsRequired(BattleSkill2Description)}`
-		NewCharacter.Skill1Icon = Character.Skill1Icon ?? BattleSkill1Icon
-		NewCharacter.Skill2Icon = Character.Skill2Icon ?? BattleSkill2Icon
-
+		// NewCharacter.Skill1 = Character.Skill1 ?? `${BattleSkill1Name}/Lv.10:${BattleSkill1Description.replace(`Points Required: ${extractPointsRequired(BattleSkill1Description)}`, "")}Cost: ${extractPointsRequired(BattleSkill1Description)}`
+		// NewCharacter.Skill2 = Character.Skill2 ?? `${BattleSkill2Name}/Lv.10:${BattleSkill2Description.replace(`Points Required: ${extractPointsRequired(BattleSkill2Description)}`, "")}Cost: ${extractPointsRequired(BattleSkill2Description)}`
+		// NewCharacter.Skill1Icon = Character.Skill1Icon ?? BattleSkill1Icon
+		// NewCharacter.Skill2Icon = Character.Skill2Icon ?? BattleSkill2Icon
 	}
 
 	//Divine Protection
@@ -354,11 +411,14 @@ async function scrapFields(DOM, Character, Key) {
 	}
 
 	// console.log(NewCharacter)
+	console.log("key " + Key);
 	Characters[Key] = NewCharacter
 }
 
 async function scrapCharacters(DOM, Event) {
 	let CharacterContainers = DOM.querySelectorAll(".chara-grid")
+	let ContainersHTML = [...CharacterContainers].map(el => el.innerHTML)
+	// OutputToJSONFile("ContainersHTML.json", ContainersHTML)
 	let NewBanner = [];
 	for await (const CharacterGrid of CharacterContainers) {
 		let NameElement = CharacterGrid.previousElementSibling

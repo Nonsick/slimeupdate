@@ -373,237 +373,237 @@ async function ha() {
         if (dom2 == null) {
             return;
         }
-        if (dom2.window.document.querySelector(".chara-grid")) {
-            let allgrids = dom2.window.document.querySelectorAll(".chara-grid")
-            for await (const ele of allgrids) {
-                let CharName = ele.previousElementSibling.querySelector(".headline-m-text").innerHTML
-                CharName = CharName.split("] ")[1] + " " + CharName.split("] ")[0] + "]"
-                let found = false
-                let FirstName = CharName.split(" ")[0]
-                let amount = 1
-                console.log(CharName)
-                Object.keys(CharacterData).forEach(async function (key) {
-                    if (CharacterData[key].Name == CharName) {
-                        found = key
-                        FirstName = key
-                    }
-                })
-                if (found == false) {
-                    while ((FirstName + amount.toString()) in CharacterData) {
-                        amount = amount + 1
-                    }
-                    FirstName = FirstName + amount.toString()
-                }
-                Banner.push(FirstName)
-                let SecretType
-                let Secret
-                let DivineProtection
-                let SupportDivineProtection
-                let ProtectionSkill
-                let Skill1
-                let Skill1Icon
-                let Skill2
-                let Skill2Icon
-                let Trait1
-                let Trait1A
-                let Valor1
-                let Valor1A
-                let ProtectionSkillIcon
-                let EXAbility1
-                let EXAbility1Icon
-                let EXAbility2
-                let EXAbility2Icon
-                let SecretSkillTrait
-                let Type
-                let SecondType
-                let AtkType
-                let UnitType = "Battle Characters"
-                if (ele.querySelectorAll(".chara-skills-secret")[0]) {
-                    //SecretType = capitalizeFirstLetter(ele.querySelectorAll(".chara-skills-secret")[0].getAttribute("data-secret-badge"))
-                    let Container =  Array.from(ele.querySelectorAll(".chara-skills-container"))
-                    let TraitsContainer =  Array.from(ele.querySelectorAll("section"))
+        // if (dom2.window.document.querySelector(".chara-grid")) {
+        //     let allgrids = dom2.window.document.querySelectorAll(".chara-grid")
+        //     for await (const ele of allgrids) {
+        //         let CharName = ele.previousElementSibling.querySelector(".headline-m-text").innerHTML
+        //         CharName = CharName.split("] ")[1] + " " + CharName.split("] ")[0] + "]"
+        //         let found = false
+        //         let FirstName = CharName.split(" ")[0]
+        //         let amount = 1
+        //         console.log(CharName)
+        //         Object.keys(CharacterData).forEach(async function (key) {
+        //             if (CharacterData[key].Name == CharName) {
+        //                 found = key
+        //                 FirstName = key
+        //             }
+        //         })
+        //         if (found == false) {
+        //             while ((FirstName + amount.toString()) in CharacterData) {
+        //                 amount = amount + 1
+        //             }
+        //             FirstName = FirstName + amount.toString()
+        //         }
+        //         Banner.push(FirstName)
+        //         let SecretType
+        //         let Secret
+        //         let DivineProtection
+        //         let SupportDivineProtection
+        //         let ProtectionSkill
+        //         let Skill1
+        //         let Skill1Icon
+        //         let Skill2
+        //         let Skill2Icon
+        //         let Trait1
+        //         let Trait1A
+        //         let Valor1
+        //         let Valor1A
+        //         let ProtectionSkillIcon
+        //         let EXAbility1
+        //         let EXAbility1Icon
+        //         let EXAbility2
+        //         let EXAbility2Icon
+        //         let SecretSkillTrait
+        //         let Type
+        //         let SecondType
+        //         let AtkType
+        //         let UnitType = "Battle Characters"
+        //         if (ele.querySelectorAll(".chara-skills-secret")[0]) {
+        //             //SecretType = capitalizeFirstLetter(ele.querySelectorAll(".chara-skills-secret")[0].getAttribute("data-secret-badge"))
+        //             let Container =  Array.from(ele.querySelectorAll(".chara-skills-container"))
+        //             let TraitsContainer =  Array.from(ele.querySelectorAll("section"))
 
-                    let SecretSection = Container.find(el => el.textContent.includes('Secret Skill'))
-                    let SkillsSection = Container.find(el => el.textContent.includes('Battle Skills'))
-                    let ValorSection = TraitsContainer.find(el => el.textContent.includes('Valor Traits'))
-                    let TraitsSection = TraitsContainer.find(el => el.textContent.includes('Character Traits'))
-                    let SecretSkillTraitSection = TraitsContainer.find(el => el.textContent.includes('Secret Skill Enhancement Traits'))
-                    let EXSection = TraitsContainer.find(el => el.textContent.includes('EX Ability Release'))
+        //             let SecretSection = Container.find(el => el.textContent.includes('Secret Skill'))
+        //             let SkillsSection = Container.find(el => el.textContent.includes('Battle Skills'))
+        //             let ValorSection = TraitsContainer.find(el => el.textContent.includes('Valor Traits'))
+        //             let TraitsSection = TraitsContainer.find(el => el.textContent.includes('Character Traits'))
+        //             let SecretSkillTraitSection = TraitsContainer.find(el => el.textContent.includes('Secret Skill Enhancement Traits'))
+        //             let EXSection = TraitsContainer.find(el => el.textContent.includes('EX Ability Release'))
 
-                    Secret = SecretSection.querySelector(".chara-skills-name").textContent + ":" + SecretSection.querySelector(".chara-skills-text").textContent
-                    SecretType = Secret.toLowerCase().includes("all-target") ? "All" : "Single"
+        //             Secret = SecretSection.querySelector(".chara-skills-name").textContent + ":" + SecretSection.querySelector(".chara-skills-text").textContent
+        //             SecretType = Secret.toLowerCase().includes("all-target") ? "All" : "Single"
                     
-                    for (let i = 0; i <= 1; i++) {
-                        let SkillTitle = SkillsSection.querySelectorAll(".chara-skills-name")[i]
-                        let SkillText = SkillsSection.querySelectorAll(".chara-skills-text")[i]
-                        if (i == 0)
-                        {
-                            Skill1 = SkillTitle.textContent + "/Lv.10:" + SkillText.textContent.replace(SkillText.innerHTML.split("<br>")[0], "") + "Cost: " + SkillText.innerHTML.split("<br>")[0].replace("Points Required: ", "")
-                            Skill1Icon = SkillsSection.querySelectorAll(".chara-skills-icon > img")[i].src
-                        }
-                        else
-                        {
-                            Skill2 = SkillTitle.textContent + "/Lv.10:" + SkillText.textContent.replace(SkillText.innerHTML.split("<br>")[0], "") + "Cost: " + SkillText.innerHTML.split("<br>")[0].replace("Points Required: ", "")
-                            Skill2Icon = SkillsSection.querySelectorAll(".chara-skills-icon > img")[i].src
-                        }
-                    }
+        //             for (let i = 0; i <= 1; i++) {
+        //                 let SkillTitle = SkillsSection.querySelectorAll(".chara-skills-name")[i]
+        //                 let SkillText = SkillsSection.querySelectorAll(".chara-skills-text")[i]
+        //                 if (i == 0)
+        //                 {
+        //                     Skill1 = SkillTitle.textContent + "/Lv.10:" + SkillText.textContent.replace(SkillText.innerHTML.split("<br>")[0], "") + "Cost: " + SkillText.innerHTML.split("<br>")[0].replace("Points Required: ", "")
+        //                     Skill1Icon = SkillsSection.querySelectorAll(".chara-skills-icon > img")[i].src
+        //                 }
+        //                 else
+        //                 {
+        //                     Skill2 = SkillTitle.textContent + "/Lv.10:" + SkillText.textContent.replace(SkillText.innerHTML.split("<br>")[0], "") + "Cost: " + SkillText.innerHTML.split("<br>")[0].replace("Points Required: ", "")
+        //                     Skill2Icon = SkillsSection.querySelectorAll(".chara-skills-icon > img")[i].src
+        //                 }
+        //             }
                     
-                    if (ValorSection)
-                    {
-                        Valor1 = ValorSection.querySelectorAll(".header")[0].textContent + ":" + ValorSection.querySelectorAll("p")[0].textContent
-                        if (ValorSection.querySelectorAll(".header")[1])
-                            Valor1A = ValorSection.querySelectorAll(".header")[1].textContent + ":" + ValorSection.querySelectorAll("p")[1].textContent
-                    }
+        //             if (ValorSection)
+        //             {
+        //                 Valor1 = ValorSection.querySelectorAll(".header")[0].textContent + ":" + ValorSection.querySelectorAll("p")[0].textContent
+        //                 if (ValorSection.querySelectorAll(".header")[1])
+        //                     Valor1A = ValorSection.querySelectorAll(".header")[1].textContent + ":" + ValorSection.querySelectorAll("p")[1].textContent
+        //             }
 
-                    if (TraitsSection)
-                    {
-                        Trait1 = TraitsSection.querySelectorAll(".header")[0].textContent + ":" + TraitsSection.querySelectorAll("p")[0].textContent
-                        Trait1A = TraitsSection.querySelectorAll(".header")[1].textContent + ":" + TraitsSection.querySelectorAll("p")[1].textContent
-                    }
+        //             if (TraitsSection)
+        //             {
+        //                 Trait1 = TraitsSection.querySelectorAll(".header")[0].textContent + ":" + TraitsSection.querySelectorAll("p")[0].textContent
+        //                 Trait1A = TraitsSection.querySelectorAll(".header")[1].textContent + ":" + TraitsSection.querySelectorAll("p")[1].textContent
+        //             }
 
-                    if (SecretSkillTraitSection)
-                    {
-                        SecretSkillTrait = SecretSkillTraitSection.querySelectorAll(".header")[0].textContent + ":" + SecretSkillTraitSection.querySelectorAll("p")[0].textContent
-                    }
+        //             if (SecretSkillTraitSection)
+        //             {
+        //                 SecretSkillTrait = SecretSkillTraitSection.querySelectorAll(".header")[0].textContent + ":" + SecretSkillTraitSection.querySelectorAll("p")[0].textContent
+        //             }
 
-                    for (let i = 0; i <= 1; i++) {
-                        let SkillTitle = SkillsSection.querySelectorAll(".chara-skills-name")[i]
-                        let SkillText = SkillsSection.querySelectorAll(".chara-skills-text")[i]
-                        if (i == 0)
-                        {
-                            Skill1 = SkillTitle.textContent + "/Lv.10:" + SkillText.textContent.replace(SkillText.innerHTML.split("<br>")[0], "") + "Cost: " + SkillText.innerHTML.split("<br>")[0].replace("Points Required: ", "")
-                            Skill1Icon = SkillsSection.querySelectorAll(".chara-skills-icon > img")[i].src
-                        }
-                        else
-                        {
-                            Skill2 = SkillTitle.textContent + "/Lv.10:" + SkillText.textContent.replace(SkillText.innerHTML.split("<br>")[0], "") + "Cost: " + SkillText.innerHTML.split("<br>")[0].replace("Points Required: ", "")
-                            Skill2Icon = SkillsSection.querySelectorAll(".chara-skills-icon > img")[i].src
-                        }
-                    }
+        //             for (let i = 0; i <= 1; i++) {
+        //                 let SkillTitle = SkillsSection.querySelectorAll(".chara-skills-name")[i]
+        //                 let SkillText = SkillsSection.querySelectorAll(".chara-skills-text")[i]
+        //                 if (i == 0)
+        //                 {
+        //                     Skill1 = SkillTitle.textContent + "/Lv.10:" + SkillText.textContent.replace(SkillText.innerHTML.split("<br>")[0], "") + "Cost: " + SkillText.innerHTML.split("<br>")[0].replace("Points Required: ", "")
+        //                     Skill1Icon = SkillsSection.querySelectorAll(".chara-skills-icon > img")[i].src
+        //                 }
+        //                 else
+        //                 {
+        //                     Skill2 = SkillTitle.textContent + "/Lv.10:" + SkillText.textContent.replace(SkillText.innerHTML.split("<br>")[0], "") + "Cost: " + SkillText.innerHTML.split("<br>")[0].replace("Points Required: ", "")
+        //                     Skill2Icon = SkillsSection.querySelectorAll(".chara-skills-icon > img")[i].src
+        //                 }
+        //             }
                     
-                    EXAbility1 = EXSection.querySelectorAll(".chara-skills-name")[0].textContent + ":" + EXSection.querySelectorAll(".chara-skills-text")[0].textContent
-                    EXAbility2 = EXSection.querySelectorAll(".chara-skills-name")[1].textContent + ":" + EXSection.querySelectorAll(".chara-skills-text")[1].textContent
-                    EXAbility1Icon = EXSection.querySelectorAll(".chara-skills-icon > img")[0].src
-                    EXAbility2Icon = EXSection.querySelectorAll(".chara-skills-icon > img")[1].src
+        //             EXAbility1 = EXSection.querySelectorAll(".chara-skills-name")[0].textContent + ":" + EXSection.querySelectorAll(".chara-skills-text")[0].textContent
+        //             EXAbility2 = EXSection.querySelectorAll(".chara-skills-name")[1].textContent + ":" + EXSection.querySelectorAll(".chara-skills-text")[1].textContent
+        //             EXAbility1Icon = EXSection.querySelectorAll(".chara-skills-icon > img")[0].src
+        //             EXAbility2Icon = EXSection.querySelectorAll(".chara-skills-icon > img")[1].src
     
-                    Type = typeconvert[ele.previousElementSibling.getAttribute("data-attribute")]
-                    AtkType = atktypeconvert[ele.previousElementSibling.getAttribute("data-type")]
-                }
-                else {
-                    UnitType = "Protection Characters"
-                    DivineProtection = ele.querySelectorAll(".chara-skills-name")[0].textContent + ":" + ele.querySelectorAll(".chara-skills-text")[1].textContent
-                    if (ele.querySelectorAll(".chara-skills-name")[2]) {
-                        SupportDivineProtection = ele.querySelectorAll(".chara-skills-name")[0].textContent + ":" + ele.querySelectorAll(".chara-skills-text")[2].textContent
-                        ProtectionSkill = ele.querySelectorAll(".chara-skills-name")[2].textContent + "/Lv.10:" + ele.querySelectorAll(".chara-skills-text")[3].textContent
-                        Trait1 = ele.querySelectorAll(".chara-skills-text")[4].previousElementSibling.textContent + ":" + ele.querySelectorAll(".chara-skills-text")[4].textContent
-                        Trait1A = ele.querySelectorAll(".chara-skills-text")[5].previousElementSibling.textContent + ":" + ele.querySelectorAll(".chara-skills-text")[5].textContent
-                    }
-                    else {
-                        ProtectionSkill = ele.querySelectorAll(".chara-skills-name")[1].textContent + "/Lv.10:" + ele.querySelectorAll(".chara-skills-text")[2].textContent
-                        Trait1 = ele.querySelectorAll(".chara-skills-text")[3].previousElementSibling.textContent + ":" + ele.querySelectorAll(".chara-skills-text")[3].textContent
-                        Trait1A = ele.querySelectorAll(".chara-skills-text")[4].previousElementSibling.textContent + ":" + ele.querySelectorAll(".chara-skills-text")[4].textContent
-                    }
-                    ProtectionSkillIcon = ele.querySelectorAll(".chara-skills-icon > img")[1].getAttribute("src")
-                    Type = typeconvert[ele.previousElementSibling.getAttribute("data-leader")]
-                    SecondType = typeconvert[ele.previousElementSibling.getAttribute("data-leader-2")]
+        //             Type = typeconvert[ele.previousElementSibling.getAttribute("data-attribute")]
+        //             AtkType = atktypeconvert[ele.previousElementSibling.getAttribute("data-type")]
+        //         }
+        //         else {
+        //             UnitType = "Protection Characters"
+        //             DivineProtection = ele.querySelectorAll(".chara-skills-name")[0].textContent + ":" + ele.querySelectorAll(".chara-skills-text")[1].textContent
+        //             if (ele.querySelectorAll(".chara-skills-name")[2]) {
+        //                 SupportDivineProtection = ele.querySelectorAll(".chara-skills-name")[0].textContent + ":" + ele.querySelectorAll(".chara-skills-text")[2].textContent
+        //                 ProtectionSkill = ele.querySelectorAll(".chara-skills-name")[2].textContent + "/Lv.10:" + ele.querySelectorAll(".chara-skills-text")[3].textContent
+        //                 Trait1 = ele.querySelectorAll(".chara-skills-text")[4].previousElementSibling.textContent + ":" + ele.querySelectorAll(".chara-skills-text")[4].textContent
+        //                 Trait1A = ele.querySelectorAll(".chara-skills-text")[5].previousElementSibling.textContent + ":" + ele.querySelectorAll(".chara-skills-text")[5].textContent
+        //             }
+        //             else {
+        //                 ProtectionSkill = ele.querySelectorAll(".chara-skills-name")[1].textContent + "/Lv.10:" + ele.querySelectorAll(".chara-skills-text")[2].textContent
+        //                 Trait1 = ele.querySelectorAll(".chara-skills-text")[3].previousElementSibling.textContent + ":" + ele.querySelectorAll(".chara-skills-text")[3].textContent
+        //                 Trait1A = ele.querySelectorAll(".chara-skills-text")[4].previousElementSibling.textContent + ":" + ele.querySelectorAll(".chara-skills-text")[4].textContent
+        //             }
+        //             ProtectionSkillIcon = ele.querySelectorAll(".chara-skills-icon > img")[1].getAttribute("src")
+        //             Type = typeconvert[ele.previousElementSibling.getAttribute("data-leader")]
+        //             SecondType = typeconvert[ele.previousElementSibling.getAttribute("data-leader-2")]
 
-                }
-                if (found != false) {
-                    CharacterData[FirstName].SupportDivineProtection = SupportDivineProtection
-                    CharacterData[FirstName].Skill1Icon = Skill1Icon
-                    CharacterData[FirstName].Skill2Icon = Skill2Icon
-                    CharacterData[FirstName].ProtectionSkillIcon = ProtectionSkillIcon
-                    CharacterData[FirstName].EXAbility1 = EXAbility1
-                    CharacterData[FirstName].EXAbility1Icon = EXAbility1Icon
-                    CharacterData[FirstName].EXAbility2 = EXAbility2
-                    CharacterData[FirstName].EXAbility2Icon = EXAbility2Icon
-                    CharacterData[FirstName].UnitType = UnitType
-                    CharacterData[FirstName].Trait1 = Trait1
-                    CharacterData[FirstName].Trait1A = Trait1A
-                    CharacterData[FirstName].Valor1 = Valor1
-                    CharacterData[FirstName].Valor1A = Valor1A
-                    CharacterData[FirstName].SecretSkillTrait = SecretSkillTrait
-                    CharacterData[FirstName].SecretType = SecretType
-                    CharacterData[FirstName].MinHp = Number(ele.querySelectorAll(".chara-status-value")[0].textContent.split("(")[0])
-                    CharacterData[FirstName].MaxHp = Number(ele.querySelectorAll(".chara-status-value")[0].textContent.split("(")[1].replaceAll(")", ""))
-                    CharacterData[FirstName].MinAtk = Number(ele.querySelectorAll(".chara-status-value")[1].textContent.split("(")[0])
-                    CharacterData[FirstName].MaxAtk = Number(ele.querySelectorAll(".chara-status-value")[1].textContent.split("(")[1].replaceAll(")", ""))
-                    CharacterData[FirstName].MinDef = Number(ele.querySelectorAll(".chara-status-value")[2].textContent.split("(")[0])
-                    CharacterData[FirstName].MaxDef = Number(ele.querySelectorAll(".chara-status-value")[2].textContent.split("(")[1].replaceAll(")", ""))
-                    CharacterData[FirstName].MinOutput = Number(ele.querySelectorAll(".chara-status-value")[3].textContent.split("(")[0])
-                    CharacterData[FirstName].MaxOutput = Number(ele.querySelectorAll(".chara-status-value")[3].textContent.split("(")[1].replaceAll(")", ""))
-                    if (EventName.includes("Octagram Bazaar Character Details"))
-                        CharacterData[FirstName].Octagram = true
-                    else
-                        CharacterData[FirstName].Octagram = false
-                }
-                else {
-                    CharacterData = Object.assign({
-                        [FirstName]: {
-                            New: true,
-                            Name: CharName,
-                            Icon: (ele.querySelectorAll(".chara-skills-secret > img")[0] ?? ele.querySelectorAll(".chara-img > img")[0]).getAttribute("src"),
-                            Art: ele.querySelectorAll(".chara-img > img")[0].getAttribute("src"),
+        //         }
+        //         if (found != false) {
+        //             CharacterData[FirstName].SupportDivineProtection = SupportDivineProtection
+        //             CharacterData[FirstName].Skill1Icon = Skill1Icon
+        //             CharacterData[FirstName].Skill2Icon = Skill2Icon
+        //             CharacterData[FirstName].ProtectionSkillIcon = ProtectionSkillIcon
+        //             CharacterData[FirstName].EXAbility1 = EXAbility1
+        //             CharacterData[FirstName].EXAbility1Icon = EXAbility1Icon
+        //             CharacterData[FirstName].EXAbility2 = EXAbility2
+        //             CharacterData[FirstName].EXAbility2Icon = EXAbility2Icon
+        //             CharacterData[FirstName].UnitType = UnitType
+        //             CharacterData[FirstName].Trait1 = Trait1
+        //             CharacterData[FirstName].Trait1A = Trait1A
+        //             CharacterData[FirstName].Valor1 = Valor1
+        //             CharacterData[FirstName].Valor1A = Valor1A
+        //             CharacterData[FirstName].SecretSkillTrait = SecretSkillTrait
+        //             CharacterData[FirstName].SecretType = SecretType
+        //             CharacterData[FirstName].MinHp = Number(ele.querySelectorAll(".chara-status-value")[0].textContent.split("(")[0])
+        //             CharacterData[FirstName].MaxHp = Number(ele.querySelectorAll(".chara-status-value")[0].textContent.split("(")[1].replaceAll(")", ""))
+        //             CharacterData[FirstName].MinAtk = Number(ele.querySelectorAll(".chara-status-value")[1].textContent.split("(")[0])
+        //             CharacterData[FirstName].MaxAtk = Number(ele.querySelectorAll(".chara-status-value")[1].textContent.split("(")[1].replaceAll(")", ""))
+        //             CharacterData[FirstName].MinDef = Number(ele.querySelectorAll(".chara-status-value")[2].textContent.split("(")[0])
+        //             CharacterData[FirstName].MaxDef = Number(ele.querySelectorAll(".chara-status-value")[2].textContent.split("(")[1].replaceAll(")", ""))
+        //             CharacterData[FirstName].MinOutput = Number(ele.querySelectorAll(".chara-status-value")[3].textContent.split("(")[0])
+        //             CharacterData[FirstName].MaxOutput = Number(ele.querySelectorAll(".chara-status-value")[3].textContent.split("(")[1].replaceAll(")", ""))
+        //             if (EventName.includes("Octagram Bazaar Character Details"))
+        //                 CharacterData[FirstName].Octagram = true
+        //             else
+        //                 CharacterData[FirstName].Octagram = false
+        //         }
+        //         else {
+        //             CharacterData = Object.assign({
+        //                 [FirstName]: {
+        //                     New: true,
+        //                     Name: CharName,
+        //                     Icon: (ele.querySelectorAll(".chara-skills-secret > img")[0] ?? ele.querySelectorAll(".chara-img > img")[0]).getAttribute("src"),
+        //                     Art: ele.querySelectorAll(".chara-img > img")[0].getAttribute("src"),
 
-                            UnitType: UnitType,
-                            Type: Type,
-                            SecondType: SecondType,
-                            AtkType: AtkType,
-                            Rarity: Number(ele.previousElementSibling.getAttribute("data-rarity")),
-                            MinHp: Number(ele.querySelectorAll(".chara-status-value")[0].textContent.split("(")[0]),
-                            MaxHp: Number(ele.querySelectorAll(".chara-status-value")[0].textContent.split("(")[1].replaceAll(")", "")),
-                            MinAtk: Number(ele.querySelectorAll(".chara-status-value")[1].textContent.split("(")[0]),
-                            MaxAtk: Number(ele.querySelectorAll(".chara-status-value")[1].textContent.split("(")[1].replaceAll(")", "")),
-                            MinDef: Number(ele.querySelectorAll(".chara-status-value")[2].textContent.split("(")[0]),
-                            MaxDef: Number(ele.querySelectorAll(".chara-status-value")[2].textContent.split("(")[1].replaceAll(")", "")),
-                            MinOutput: Number(ele.querySelectorAll(".chara-status-value")[3].textContent.split("(")[0]),
-                            MaxOutput: Number(ele.querySelectorAll(".chara-status-value")[3].textContent.split("(")[1].replaceAll(")", "")),
-                            Town1: ele.querySelectorAll(".chara-skills-text")[0].innerHTML.split("<br>")[0],
-                            Town2: ele.querySelectorAll(".chara-skills-text")[0].innerHTML.split("<br>")[1],
+        //                     UnitType: UnitType,
+        //                     Type: Type,
+        //                     SecondType: SecondType,
+        //                     AtkType: AtkType,
+        //                     Rarity: Number(ele.previousElementSibling.getAttribute("data-rarity")),
+        //                     MinHp: Number(ele.querySelectorAll(".chara-status-value")[0].textContent.split("(")[0]),
+        //                     MaxHp: Number(ele.querySelectorAll(".chara-status-value")[0].textContent.split("(")[1].replaceAll(")", "")),
+        //                     MinAtk: Number(ele.querySelectorAll(".chara-status-value")[1].textContent.split("(")[0]),
+        //                     MaxAtk: Number(ele.querySelectorAll(".chara-status-value")[1].textContent.split("(")[1].replaceAll(")", "")),
+        //                     MinDef: Number(ele.querySelectorAll(".chara-status-value")[2].textContent.split("(")[0]),
+        //                     MaxDef: Number(ele.querySelectorAll(".chara-status-value")[2].textContent.split("(")[1].replaceAll(")", "")),
+        //                     MinOutput: Number(ele.querySelectorAll(".chara-status-value")[3].textContent.split("(")[0]),
+        //                     MaxOutput: Number(ele.querySelectorAll(".chara-status-value")[3].textContent.split("(")[1].replaceAll(")", "")),
+        //                     Town1: ele.querySelectorAll(".chara-skills-text")[0].innerHTML.split("<br>")[0],
+        //                     Town2: ele.querySelectorAll(".chara-skills-text")[0].innerHTML.split("<br>")[1],
 
-                            Valor1: Valor1,
-                            Valor1A: Valor1A,
+        //                     Valor1: Valor1,
+        //                     Valor1A: Valor1A,
 
-                            SecretSkillTrait: SecretSkillTrait,
+        //                     SecretSkillTrait: SecretSkillTrait,
 
-                            SecretType: SecretType,
-                            Secret: Secret,
-                            Skill1: Skill1,
-                            Skill1Icon: Skill1Icon,
-                            Skill2: Skill2,
-                            Skill2Icon: Skill2Icon,
+        //                     SecretType: SecretType,
+        //                     Secret: Secret,
+        //                     Skill1: Skill1,
+        //                     Skill1Icon: Skill1Icon,
+        //                     Skill2: Skill2,
+        //                     Skill2Icon: Skill2Icon,
 
-                            DivineProtection: DivineProtection,
-                            SupportDivineProtection: SupportDivineProtection,
-                            ProtectionSkillIcon: ProtectionSkillIcon,
-                            ProtectionSkill: ProtectionSkill,
+        //                     DivineProtection: DivineProtection,
+        //                     SupportDivineProtection: SupportDivineProtection,
+        //                     ProtectionSkillIcon: ProtectionSkillIcon,
+        //                     ProtectionSkill: ProtectionSkill,
 
-                            Trait1: Trait1,
-                            Trait1A: Trait1A,
+        //                     Trait1: Trait1,
+        //                     Trait1A: Trait1A,
 
-                            EXAbility1: EXAbility1,
-                            EXAbility2: EXAbility2,
-                            EXAbility1Icon: EXAbility1Icon,
-                            EXAbility2Icon: EXAbility2Icon,
-                            Stats: [
-                                2,
-                                0,
-                                0,
-                                2,
-                                8,
-                                0,
-                                2,
-                                0,
-                                0,
-                                2,
-                                0,
-                                0
-                            ]
-                        }
-                    }, CharacterData)
-                }
-            }
-        }
+        //                     EXAbility1: EXAbility1,
+        //                     EXAbility2: EXAbility2,
+        //                     EXAbility1Icon: EXAbility1Icon,
+        //                     EXAbility2Icon: EXAbility2Icon,
+        //                     Stats: [
+        //                         2,
+        //                         0,
+        //                         0,
+        //                         2,
+        //                         8,
+        //                         0,
+        //                         2,
+        //                         0,
+        //                         0,
+        //                         2,
+        //                         0,
+        //                         0
+        //                     ]
+        //                 }
+        //             }, CharacterData)
+        //         }
+        //     }
+        // }
         if (EventName in EventData) {
             New = EventData[EventName].New
             if (type == 2) {
