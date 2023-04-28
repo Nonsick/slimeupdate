@@ -236,6 +236,7 @@ async function scrapFields(DOM, Character, Key) {
 		BattleSkill1Icon, BattleSkill2Icon;
 	let SkillsSection = Sections.find(el => el.textContent.includes('Skill Details') && !el.textContent.includes('Secret Skill Details'))
 	let RetardedSecretSection = Sections.find(el => el.textContent.includes('Secret Skill Details'))
+	let RetardedDivineSection = Sections.find(el => el.textContent.includes('Divine Protection Details'))
 	let EXSecretSkillSection = Array.from(SkillsSection.querySelectorAll(`.chara-skills-category`)).find(ele => ele.textContent == "EX Secret Skill")
 	let SecretSkillSection = Array.from(SkillsSection.querySelectorAll(`.chara-skills-category`)).find(ele => ele.textContent == "Secret Skill")
 	let BattleSkillsSection = Array.from(SkillsSection.querySelectorAll(`.chara-skills-category`)).filter(ele => ele.textContent.includes("Battle Skills"))
@@ -326,6 +327,8 @@ async function scrapFields(DOM, Character, Key) {
 		ProtectionSkillName, ProtectionSkillDescription, ProtectionSkillIcon;
 	let ProtectionSection = Array.from(SkillsSection.querySelectorAll(`.chara-skills-category`)).find(ele => ele.textContent == "Divine Protection")
 	let ProtectionSkillSection = Array.from(SkillsSection.querySelectorAll(`.chara-skills-category`)).find(ele => ele.textContent == "Protection Skill")
+	if (!ProtectionSection && RetardedDivineSection)
+		ProtectionSection = Array.from(RetardedDivineSection.querySelectorAll(`.chara-skills-category`)).find(ele => ele.textContent == "Divine Protection")
 	if (ProtectionSection) {
 		ProtectionName = ProtectionSection.parentElement.querySelectorAll(".chara-skills-name")[0].textContent
 		ProtectionDescription = ProtectionSection.parentElement.querySelectorAll(".chara-skills-text")[0].textContent
