@@ -445,7 +445,7 @@ async function scrapCharacters(DOM, Event) {
 		}
 		else {
 			Characters[CharacterKey].New = Characters[CharacterKey].New ?? false;
-			Characters[CharacterKey].Octagram = Event.Octagram;
+			Characters[CharacterKey].Octagram = Characters[CharacterKey].Octagram || Event.Octagram;
 		}
 		NewBanner.push(CharacterKey)
 		await scrapFields(CharacterGrid, Characters[CharacterKey], CharacterKey)
