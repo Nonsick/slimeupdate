@@ -65,15 +65,15 @@ let TierList = [
 ]
 
 const types = {
-	Fire: "https://i.imgur.com/QndVudD.png",
-	Wind: "https://i.imgur.com/pQYVkI3.png",
-	Space: "https://i.imgur.com/z8bnSYg.png",
-	Light: "https://i.imgur.com/hX15sR0.png",
-	Dark: "https://i.imgur.com/pzX6NRL.png",
-	Earth: "https://i.imgur.com/AHPti72.png",
-	Water: "https://i.imgur.com/NchScWh.png",
-	Melee: "https://i.imgur.com/EWYVugy.png",
-	Magic: "https://i.imgur.com/SsC1hEj.png",
+	Fire: "/images/5c77d32c-f4a9-4ead-a97b-4dfea94d7abd.png",
+	Wind: "/images/87416f9f-77af-4f20-bd58-e9ba4108fc7e.png",
+	Space: "/images/9ff28d4b-85df-427c-bdc3-ec1a6d5d3c5c.png",
+	Light: "/images/783ffe24-291e-4492-8073-6dcab5d40aca.png",
+	Dark: "/images/078e2d95-f38b-4472-bbc8-228fc9cee71c.png",
+	Earth: "/images/032ce07b-e263-41f0-9610-1523537a4932.png",
+	Water: "/images/ea98eed4-91a4-4dfc-a8ec-5bfb3226b1f3.png",
+	Melee: "/images/330087cc-a249-4a40-8f15-2a3f74adeeea.png",
+	Magic: "/images/9c679e32-53c1-4446-bbc5-1eff49ea008a.png",
 }
 
 let typeconvert = {
@@ -89,8 +89,8 @@ let typeconvert = {
 }
 
 let typeconvert2 = {
-	physics: "https://i.imgur.com/P8lUDX0.png",
-	magic: "https://i.imgur.com/tOS4FvO.png",
+	physics: "/images/36c4ef15-1f89-4d06-b1e6-d44a63d5dc51.png",
+	magic: "/images/d129a3dc-1c6b-44c0-951b-0fc42a537784.png",
 }
 
 ///
