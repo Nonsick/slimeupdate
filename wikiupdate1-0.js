@@ -12,7 +12,7 @@ const virtualConsole = new jsdom.VirtualConsole();
 virtualConsole.on("error", () => {
   // No-op to skip console errors.
 });
-let owner = "Seikirin"
+let owner = "sickerine"
 let repo = "slimeimwiki"
 let jsonpath = "data/events.json"
 
@@ -176,7 +176,7 @@ async function RIPLF() {
 }
 
 async function UpdateCharacters() {
-    let ther = await octokit.request('GET /repos/Seikirin/slimeimwiki/contents/data.json', {
+    let ther = await octokit.request('GET /repos/sickerine/slimeimwiki/contents/data.json', {
         owner: owner,
         repo: repo,
         path: jsonpath
@@ -286,17 +286,17 @@ async function ha() {
     })
     path = jsonpath
 
-    let bro = await octokit.request('GET /repos/Seikirin/slimeimwiki/contents/data/events.json', {
+    let bro = await octokit.request('GET /repos/sickerine/slimeimwiki/contents/data/events.json', {
         owner: owner,
         repo: repo,
         path: path
     })
-    let ther = await octokit.request('GET /repos/Seikirin/slimeimwiki/contents/data/data.json', {
+    let ther = await octokit.request('GET /repos/sickerine/slimeimwiki/contents/data/data.json', {
         owner: owner,
         repo: repo,
         path: path
     })
-    let dude = await octokit.request('GET /repos/Seikirin/slimeimwiki/contents/sitemap.xml', {
+    let dude = await octokit.request('GET /repos/sickerine/slimeimwiki/contents/sitemap.xml', {
         owner: owner,
         repo: repo,
         path: path
@@ -709,11 +709,11 @@ async function ha() {
 }
 
 async function test() {
-    var url = "https://github.com/Seikirin/slimeimwiki",
+    var url = "https://github.com/sickerine/slimeimwiki",
         local = "./slimeimwiki",
         cloneOpts = {};
 
-    const username = "Seikirin";
+    const username = "sickerine";
     const publickey = fs.readFileSync("C:\\Users\\these\\.ssh\\id_rsa.pub").toString();
     const privatekey = fs.readFileSync("C:\\Users\\these\\.ssh\\id_rsa").toString();
     console.log(publickey)
