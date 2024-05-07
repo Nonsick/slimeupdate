@@ -1,5 +1,6 @@
 name: Run Slime Update script
 
+
 on:
   schedule:
     - cron: '*/30 * * * *' # runs every 30 minutes
