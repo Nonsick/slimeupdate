@@ -1,41 +1,41 @@
 name: Run Slime Update script
 
 on:
-#   schedule:
-#     - cron: '*/30 * * * *' # runs every 30 minutes
+  schedule:
+    - cron: '*/30 * * * *' # runs every 30 minutes
   workflow_dispatch:
 
-# jobs:
-#   run-script:
-#     runs-on: ubuntu-latest
-#     env:
-#       SECRET_CODE: ${{ vars.SECRET_CODE }}
-#     timeout-minutes: 2
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    env:
+      SECRET_CODE: ${{ vars.SECRET_CODE }}
+    timeout-minutes: 2
 
-#     steps:
-#       - name: Checkout code
-#         uses: actions/checkout@v3
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-#       - name: Cache dependencies
-#         uses: actions/cache@v3
-#         with:
-#           path: |
-#             ~/.npm
-#             ~/.cache/node-gyp
-#           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-#           restore-keys: |
-#             ${{ runner.os }}-node-
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.npm
+            ~/.cache/node-gyp
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
-#       - name: Install Node.js
-#         uses: actions/setup-node@v3
-#         with:
-#           node-version: 16
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
 
-#       - name: Install dependencies
-#         run: npm install bent jsdom octokit
+      - name: Install dependencies
+        run: npm install bent jsdom octokit
 
-#       - name: Update slimeimwiki2.0
-#         run: node slimeupdate.js
+      - name: Update slimeimwiki2.0
+        run: node slimeupdate.js
 
-#       - name: Update slimeimwiki1.0
-#         run: node wikiupdate1-0.js
+      # - name: Update slimeimwiki1.0
+      #   run: node wikiupdate1-0.js
